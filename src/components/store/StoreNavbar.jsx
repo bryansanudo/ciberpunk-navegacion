@@ -1,28 +1,29 @@
 import React from "react";
 import Navegacion from "@/layouts/Navegacion";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Outlet, Link } from "react-router-dom";
 
-const Navbar = ({ isMenuShown, setIsMenuShown }) => {
+const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
   const links = [
     {
       id: 1,
-      link: "home",
+      link: "patines",
     },
     {
       id: 2,
-      link: "products",
+      link: "ruedas",
     },
     {
       id: 3,
-      link: "developer API",
+      link: "chaquetas",
     },
     {
       id: 4,
-      link: "customers",
+      link: "gorras",
     },
     {
       id: 5,
-      link: "contact",
+      link: "accesorios",
     },
   ];
 
@@ -41,7 +42,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
                   key={id}
                   className="p-4 uppercase duration-200 hover:text-thBlue cursor-pointer"
                 >
-                  {link}
+                  <Link to={`/productos/${link}`}>{link}</Link>
                 </li>
               ))}
             </ul>
@@ -71,8 +72,11 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
           <Navegacion className="mt-10" className2="mt-10" />
         </ul>
       </div>
+      <section>
+        <Outlet></Outlet>
+      </section>
     </>
   );
 };
 
-export default Navbar;
+export default StoreNavbar;

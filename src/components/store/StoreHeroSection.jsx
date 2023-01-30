@@ -4,7 +4,7 @@ import Navegacion from "@/layouts/Navegacion";
 
 import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 
-const HeroSection = ({ isMenuShown }) => {
+const StoreHeroSection = ({ isMenuShown }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
 
   const videoRef = useRef();
@@ -34,10 +34,10 @@ const HeroSection = ({ isMenuShown }) => {
           isVideoPlaying ? "" : "bg-black/80"
         } ${isMenuShown ? "opacity-20" : "opacity-100"}`}
       >
-        <h1 className="text-5xl lg:text-7xl">Web 3.0</h1>
+        <h1 className="text-5xl lg:text-7xl">Ingravity</h1>
 
         <h1 className="text-5xl lg:text-7xl capitalize mb-12">
-          the <span className="text-thBlue font-bold">future</span>is here
+          <span className="text-thBlue font-bold">Roller</span> is here
         </h1>
 
         <div className="flex flex-row justify-center items-center">
@@ -62,4 +62,4 @@ const HeroSection = ({ isMenuShown }) => {
   );
 };
 
-export default HeroSection;
+export default StoreHeroSection;

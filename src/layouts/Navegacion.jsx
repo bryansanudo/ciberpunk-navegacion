@@ -13,7 +13,7 @@ const Navegacion = ({ className, className2 }) => {
           />
         </Link>
 
-        <Link to="/products">
+        <Link to="/productos">
           <GradientBtn
             className={`ml-6 capitalize ${className2}`}
             title="Productos"
