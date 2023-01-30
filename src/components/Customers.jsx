@@ -1,6 +1,4 @@
 import React from "react";
-import PageSection from "@/components/PageSection";
-
 import {
   FaAmazon,
   FaApple,
@@ -8,6 +6,8 @@ import {
   FaGoogle,
   FaSnapchatGhost,
 } from "react-icons/fa";
+
+import PageSection from "@/components/PageSection";
 
 const Customers = () => {
   const facts = [

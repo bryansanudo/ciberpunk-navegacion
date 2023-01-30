@@ -1,6 +1,7 @@
 import React from "react";
-import Navegacion from "@/layouts/Navegacion";
 import { FaBars, FaTimes } from "react-icons/fa";
+
+import Navegacion from "@/layouts/Navegacion";
 
 const Navbar = ({ isMenuShown, setIsMenuShown }) => {
   const links = [

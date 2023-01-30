@@ -1,7 +1,8 @@
 import React from "react";
-import Navegacion from "@/layouts/Navegacion";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Outlet, Link } from "react-router-dom";
+
+import Navegacion from "@/layouts/Navegacion";
 
 const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
   const links = [

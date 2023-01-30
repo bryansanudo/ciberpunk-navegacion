@@ -1,5 +1,7 @@
 import React from "react";
+
 import codeImage from "@/assets/code.jpg";
+
 import PageSection from "@/components/PageSection";
 
 const DevApi = () => {

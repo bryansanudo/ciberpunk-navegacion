@@ -1,6 +1,7 @@
 import React from "react";
-import PageSegction from "@/components/PageSection";
 import { FaRocket, FaSatellite, FaRobot, FaMicrochip } from "react-icons/fa";
+
+import PageSegction from "@/components/PageSection";
 
 const Products = () => {
   const products = [

@@ -1,6 +1,7 @@
-import PageSegction from "@/components/PageSection";
-import { FaRocket, FaSatellite, FaRobot, FaMicrochip } from "react-icons/fa";
 import React, { useState } from "react";
+import { FaRocket, FaSatellite, FaRobot, FaMicrochip } from "react-icons/fa";
+
+import PageSegction from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
 import StoreHeroSection from "@/components/store/StoreHeroSection";
 

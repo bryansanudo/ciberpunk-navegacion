@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
-import heroVideo from "@/assets/heroVideo.mp4";
-import Navegacion from "@/layouts/Navegacion";
-
 import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
+
+import heroVideo from "@/assets/heroVideo.mp4";
+
+import Navegacion from "@/layouts/Navegacion";
 
 const HeroSection = ({ isMenuShown }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);

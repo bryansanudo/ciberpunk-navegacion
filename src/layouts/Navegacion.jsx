@@ -1,6 +1,7 @@
 import React from "react";
-import GradientBtn from "@/components/GradientBtn";
 import { Outlet, Link } from "react-router-dom";
+
+import GradientBtn from "@/components/GradientBtn";
 
 const Navegacion = ({ className, className2 }) => {
   return (

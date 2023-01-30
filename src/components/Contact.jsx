@@ -1,8 +1,10 @@
 import React from "react";
-import PageSection from "@/components/PageSection";
-import contactImage from "@/assets/contact-us.jpg";
-import ContactForm from "@/components/ContactForm";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+
+import contactImage from "@/assets/contact-us.jpg";
+
+import PageSection from "@/components/PageSection";
+import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
   return (
