@@ -1,41 +1,84 @@
 import React, { useState } from "react";
-import { FaRocket, FaSatellite, FaRobot, FaMicrochip } from "react-icons/fa";
 
-import PageSegction from "@/components/PageSection";
+import PageSection from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
 import StoreHeroSection from "@/components/store/StoreHeroSection";
+import StoreContact from "@/components/store/StoreContact";
+
+import blackMagic1 from "@/assets/whell/blackMagic1.jpg";
+import blackMagic2 from "@/assets/whell/blackMagic2.jpg";
+import blackSonic from "@/assets/whell/blackSonic.jpg";
+import grip from "@/assets/whell/grip.jpg";
+import materG13 from "@/assets/whell/materG13.jpg";
+import mpcRoadWar1 from "@/assets/whell/mpcRoadWar1.jpg";
+import mpcRoadWar2 from "@/assets/whell/mpcRoadWar2.jpg";
 
 const Wheels = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
 
-  const products = [
+  const techs = [
     {
       id: 1,
-      icon: <FaRocket size={50} className="text-white" />,
-      title: "llantass1",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
+      src: blackMagic1,
+      title: "asj",
+      milimeter: "sdfkl",
+      state: "nueva",
+      price: "$80.000",
+      style: "shadow-[#10849d]",
     },
     {
       id: 2,
-      icon: <FaSatellite size={50} className="text-white" />,
-      title: "LLantas",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
+      src: blackMagic2,
+      title: "asj",
+      milimeter: "sdfkl",
+      state: "nueva",
+      price: "$80.000",
+      style: "shadow-[#167e18]",
     },
     {
       id: 3,
-      icon: <FaRobot size={50} className="text-white" />,
-      title: "LLantas",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
+      src: blackSonic,
+      title: "asj",
+      milimeter: "sdfkl",
+      state: "nueva",
+      price: "$80.000",
+      style: "shadow-[#f8eb4c]",
     },
     {
       id: 4,
-      icon: <FaMicrochip size={50} className="text-white" />,
-      title: "LLantas",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
+      src: grip,
+      title: "asj",
+      milimeter: "sdfkl",
+      state: "nueva",
+      price: "$80.000",
+      style: "shadow-[#972c8c]",
+    },
+    {
+      id: 5,
+      src: materG13,
+      title: "asj",
+      milimeter: "sdfkl",
+      state: "nueva",
+      price: "$80.000",
+      style: "shadow-[#1cc12a]",
+    },
+    {
+      id: 6,
+      src: mpcRoadWar1,
+      title: "asj",
+      milimeter: "sdfkl",
+      state: "nueva",
+      price: "$80.000",
+      style: "shadow-[#fc644b]",
+    },
+    {
+      id: 7,
+      src: mpcRoadWar2,
+      title: "asj",
+      milimeter: "sdfkl",
+      state: "nueva",
+      price: "$80.000",
+      style: "shadow-[#ecdc31]",
     },
   ];
 
@@ -43,26 +86,42 @@ const Wheels = () => {
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
       <StoreHeroSection isMenuShown={isMenuShown} />
-      <PageSegction
-        name="products"
-        title="Products"
-        subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
-      >
-        <div className="grid lg:grid-cols-2 gap-12 text-black">
-          {products.map(({ id, icon, title, subtitle }) => (
-            <div
-              key={id}
-              className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-8 text-center"
-            >
-              <div className="flex items-center justify-center duration-300 group-hover:scale-110">
-                <div className="bg-black rounded-full p-5 m-4 ">{icon}</div>
+      <div className="flex flex-col gap-56">
+        <PageSection
+          name="products"
+          title="Products"
+          subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
+        >
+          <div
+            name="experience"
+            className="h-screen w-full bg-gradient-to-b from-gray-800 to-black"
+          >
+            <div className=" relative mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 text-white ">
+              <div className="absolute grid w-full grid-cols-1 gap-8 py-8 px-12 text-center sm:grid-cols-3 sm:px-0 top-0 left-0">
+                {techs.map(
+                  ({ id, src, price, style, title, milimeter, state }) => (
+                    <div
+                      key={id}
+                      className={`rounded-lg py-2 shadow-md duration-500 hover:scale-105 ${style}`}
+                    >
+                      <img
+                        src={src}
+                        alt=""
+                        className="mx-auto w-20 h-20 lg:w-40 lg:h-40 rounded-lg object-cover"
+                      />
+                      <p className="mt-4">{title}</p>
+                      <p>{milimeter} </p>
+                      <p>{state}</p>
+                      <p>{price}</p>
+                    </div>
+                  )
+                )}
               </div>
-              <h1 className="text-3xl lg:text-5xl my-8 capitalize">{title}</h1>
-              <p className="text-lg">{subtitle}</p>
             </div>
-          ))}
-        </div>
-      </PageSegction>
+          </div>
+        </PageSection>
+        <StoreContact />
+      </div>
     </>
   );
 };

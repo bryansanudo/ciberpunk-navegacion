@@ -4,7 +4,7 @@ import GradientBtn from "@/components/GradientBtn";
 
 const ContactForm = () => {
   return (
-    <div className="p-4 text-left">
+    <div className="p-4 text-left m-12 mx-auto">
       <form action="" mthod="POST">
         <div className="grid lg:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col col-span-2 lg:col-span-1">
@@ -33,7 +33,7 @@ const ContactForm = () => {
           </div>
           <div className="flex flex-col col-span-2 ">
             <label className="capitalize text-sm py-2 font-light">
-              message
+              messagee
             </label>
             <textarea
               name="message"

@@ -17,9 +17,10 @@ import cap14 from "@/assets/cap/cap14.jpg";
 import cap15 from "@/assets/cap/cap15.jpg";
 import cap16 from "@/assets/cap/cap16.jpg";
 
-import PageSegction from "@/components/PageSection";
+import PageSection from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
 import StoreHeroSection from "@/components/store/StoreHeroSection";
+import StoreContact from "@/components/store/StoreContact";
 
 const Waterproof = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
@@ -111,35 +112,40 @@ const Waterproof = () => {
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
       <StoreHeroSection isMenuShown={isMenuShown} />
-      <PageSegction
-        name="products"
-        title="Products"
-        subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
-      >
-        <div
-          name="experience"
-          className="h-screen w-full bg-gradient-to-b from-gray-800 to-black"
-        >
-          <div className=" relative mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 text-white ">
-            <div className="absolute grid w-full grid-cols-1 gap-8 py-8 px-12 text-center sm:grid-cols-3 sm:px-0 top-0 left-0">
-              {techs.map(({ id, src, style }) => (
-                <div
-                  key={id}
-                  className={`rounded-lg py-2 shadow-md duration-500 hover:scale-105 ${style}`}
-                >
-                  <img
-                    src={src}
-                    alt=""
-                    className="mx-auto w-36 h-36 lg:w-56 lg:h-56 rounded-lg"
-                  />
 
-                  <p className="m-4">INGRAVITY</p>
-                </div>
-              ))}
+      <div className="flex flex-col gap-96 mx-auto">
+        <PageSection
+          name="products"
+          title="Products"
+          subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
+          style="flex flex-col gap-[] sm:gap-[] md:gap-[] lg:gap-[]"
+        >
+          <div
+            name="experience"
+            className="h-screen w-full bg-gradient-to-b from-gray-800 to-black"
+          >
+            <div className=" relative mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 text-white ">
+              <div className="absolute grid w-full grid-cols-1 gap-8 py-8 px-12 text-center sm:grid-cols-3 sm:px-0 top-0 left-0">
+                {techs.map(({ id, src, style }) => (
+                  <div
+                    key={id}
+                    className={`rounded-lg py-2 shadow-md duration-500 hover:scale-105 ${style}`}
+                  >
+                    <img
+                      src={src}
+                      alt=""
+                      className="mx-auto w-36 h-36 lg:w-56 lg:h-56 rounded-lg"
+                    />
+
+                    <p className="m-4">INGRAVITY</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </PageSegction>
+        </PageSection>
+        <StoreContact />
+      </div>
     </>
   );
 };

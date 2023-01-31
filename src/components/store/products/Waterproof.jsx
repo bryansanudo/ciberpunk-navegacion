@@ -13,9 +13,10 @@ import waterproof10 from "@/assets/waterproof/waterproof10.jpg";
 import waterproof11 from "@/assets/waterproof/waterproof11.jpg";
 import waterproof12 from "@/assets/waterproof/waterproof12.jpg";
 
-import PageSegction from "@/components/PageSection";
+import PageSection from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
 import StoreHeroSection from "@/components/store/StoreHeroSection";
+import StoreContact from "@/components/store/StoreContact";
 
 const Waterproof = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
@@ -99,35 +100,38 @@ const Waterproof = () => {
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
       <StoreHeroSection isMenuShown={isMenuShown} />
-      <PageSegction
-        name="products"
-        title="Products"
-        subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
-      >
-        <div
-          name="experience"
-          className="h-screen w-full bg-gradient-to-b from-gray-800 to-black"
+      <div className="flex flex-col gap-56">
+        <PageSection
+          name="products"
+          title="Products"
+          subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
         >
-          <div className=" relative mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 text-white ">
-            <div className="absolute grid w-full grid-cols-1 gap-8 py-8 px-12 text-center sm:grid-cols-3 sm:px-0 top-0 left-0">
-              {techs.map(({ id, src, price, style }) => (
-                <div
-                  key={id}
-                  className={`rounded-lg py-2 shadow-md duration-500 hover:scale-105 ${style}`}
-                >
-                  <img
-                    src={src}
-                    alt=""
-                    className="mx-auto w-56 h-56 lg:w-96 lg:h-96 rounded-lg"
-                  />
-                  <p className="mt-4">{price}</p>
-                  <p>Talla S-M-L</p>
-                </div>
-              ))}
+          <div
+            name="experience"
+            className="h-screen w-full bg-gradient-to-b from-gray-800 to-black"
+          >
+            <div className=" relative mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 text-white ">
+              <div className="absolute grid w-full grid-cols-1 gap-8 py-8 px-12 text-center sm:grid-cols-3 sm:px-0 top-0 left-0">
+                {techs.map(({ id, src, price, style }) => (
+                  <div
+                    key={id}
+                    className={`rounded-lg py-2 shadow-md duration-500 hover:scale-105 ${style}`}
+                  >
+                    <img
+                      src={src}
+                      alt=""
+                      className="mx-auto w-56 h-56 lg:w-96 lg:h-96 rounded-lg"
+                    />
+                    <p className="mt-4">{price}</p>
+                    <p>Talla S-M-L</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </PageSegction>
+        </PageSection>
+        <StoreContact />
+      </div>
     </>
   );
 };

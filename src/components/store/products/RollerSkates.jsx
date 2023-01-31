@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { FaRocket, FaSatellite, FaRobot, FaMicrochip } from "react-icons/fa";
+
+import agresivos from "@/assets/rollerSkate/agresivos.jpg";
+import downhill from "@/assets/rollerSkate/downhill.jpg";
+import profesionales from "@/assets/rollerSkate/profesionales.jpg";
+import recreativos from "@/assets/rollerSkate/recreativos.jpg";
+import tradicionales from "@/assets/rollerSkate/tradicionales.jpg";
+import urbanos from "@/assets/rollerSkate/urbanos.jpg";
 
 import PageSegction from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
@@ -8,34 +14,42 @@ import StoreHeroSection from "@/components/store/StoreHeroSection";
 const RollerSkates = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
 
-  const products = [
+  const portfolios = [
     {
       id: 1,
-      icon: <FaRocket size={50} className="text-white" />,
-      title: "llantass1",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
+      src: urbanos,
+      category: "urbanos",
+      code: "/urbanos.pdf",
     },
     {
       id: 2,
-      icon: <FaSatellite size={50} className="text-white" />,
-      title: "LLantas",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
+      src: downhill,
+      category: "downhill",
+      code: "/downhill.pdf",
     },
     {
       id: 3,
-      icon: <FaRobot size={50} className="text-white" />,
-      title: "LLantas",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
+      src: profesionales,
+      category: "profesionales",
+      code: "/profesionales.pdf",
     },
     {
       id: 4,
-      icon: <FaMicrochip size={50} className="text-white" />,
-      title: "LLantas",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
+      src: recreativos,
+      category: "recreativos",
+      code: "/recreativos.pdf",
+    },
+    {
+      id: 5,
+      src: agresivos,
+      category: "agresivos",
+      code: "/agresivos.pdf",
+    },
+    {
+      id: 6,
+      src: tradicionales,
+      category: "tradicionales",
+      code: "/tradicionales.pdf",
     },
   ];
 
@@ -48,19 +62,31 @@ const RollerSkates = () => {
         title="Products"
         subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
       >
-        <div className="grid lg:grid-cols-2 gap-12 text-black">
-          {products.map(({ id, icon, title, subtitle }) => (
-            <div
-              key={id}
-              className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-8 text-center"
-            >
-              <div className="flex items-center justify-center duration-300 group-hover:scale-110">
-                <div className="bg-black rounded-full p-5 m-4 ">{icon}</div>
-              </div>
-              <h1 className="text-3xl lg:text-5xl my-8 capitalize">{title}</h1>
-              <p className="text-lg">{subtitle}</p>
+        <div
+          name="portfolio"
+          className="w-full bg-gradient-to-b from-gray-800 to-black text-white md:h-screen"
+        >
+          <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4">
+            <div className="grid gap-8 px-12 sm:grid-cols-2 sm:px-0 md:grid-cols-3">
+              {portfolios.map(({ id, src, code, category }) => (
+                <div
+                  key={id}
+                  className="rounded-lg shadow-md shadow-gray-600 duration-200 hover:scale-105"
+                >
+                  <a href={code} target="_blank" rel="noreferrer">
+                    <img
+                      src={src}
+                      alt=""
+                      className="rounded-md duration-200 hover:scale-105 cursor"
+                    />
+                    <div className="flex items-center justify-center">
+                      <p className="m-4   py-3 uppercase">{category}</p>
+                    </div>
+                  </a>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </PageSegction>
     </>
