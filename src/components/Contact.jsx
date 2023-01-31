@@ -18,7 +18,7 @@ const Contact = () => {
           <img
             src={ingravityLogo}
             alt="contact us"
-            className="rounded-full object-cover w-72 h-72 shadow-lg shadow-thPurple"
+            className="rounded-full object-cover w-72 h-72 shadow-xl shadow-thOrange"
           />
 
           <p className="py-8 max-w-md">
@@ -26,19 +26,17 @@ const Contact = () => {
             Dignissimos a voluptatibus optio repudiandae sequi laudantium
           </p>
           <div className="grid grid-cols-1  mx-auto w-3/5 lg:w-2/5 gap-4">
-            <div className="flex items-center justify-center rounded-full shadow-md shadow-thPurple hover:scale-105 duration-200 p-3 cursor-pointer">
+            <div className="flex items-center justify-center rounded-full shadow-lg shadow-thOrange hover:scale-105 duration-200 p-3 cursor-pointer">
               <FaWhatsapp size={25} />
             </div>
-            <div className="flex items-center justify-center rounded-full shadow-md shadow-thPurple hover:scale-105 duration-200 p-3 cursor-pointer">
+            <div className="flex items-center justify-center rounded-full shadow-lg shadow-thBlue hover:scale-105 duration-200 p-3 cursor-pointer">
               <div className="flex flex-col items-center justify-center ">
                 <FaInstagram size={25} />
-                <p>Tienda</p>
               </div>
             </div>
-            <div className="flex items-center justify-center rounded-full shadow-md shadow-thPurple hover:scale-105 duration-200 p-3 cursor-pointer">
+            <div className="flex items-center justify-center rounded-full shadow-lg shadow-thOrange hover:scale-105 duration-200 p-3 cursor-pointer">
               <div className="flex flex-col items-center justify-center ">
                 <FaInstagram size={25} />
-                <p>Comunidad</p>
               </div>
             </div>
           </div>

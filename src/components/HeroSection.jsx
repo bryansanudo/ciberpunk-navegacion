@@ -3,8 +3,6 @@ import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 
 import heroVideo from "@/assets/video1.mp4";
 
-import Navegacion from "@/layouts/Navegacion";
-
 const HeroSection = ({ isMenuShown }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
 
@@ -35,26 +33,23 @@ const HeroSection = ({ isMenuShown }) => {
           isVideoPlaying ? "" : "bg-black/80"
         } ${isMenuShown ? "opacity-20" : "opacity-100"}`}
       >
-        <h1 className="text-5xl lg:text-7xl">Web 3.0</h1>
+        <div className="flex flex-col gap-5 items-center">
+          <h1 className="text-5xl lg:text-7xl text-thOrange uppercase">
+            Ingravity
+          </h1>
 
-        <h1 className="text-5xl lg:text-7xl capitalize mb-12">
-          the <span className="text-thBlue font-bold">future</span>is here
-        </h1>
-
-        <div className="flex flex-row justify-center items-center">
-          <Navegacion className="capitalize" className2="capitalize mx-12" />
-
+          <h1 className="text-5xl lg:text-7xl  uppercase ">Roller</h1>
           {isVideoPlaying ? (
             <FaPauseCircle
               size={30}
               onClick={handleVideoPause}
-              className="cursor-pointer hover:scale-110 duration-200 text-thBlue"
+              className="cursor-pointer hover:scale-110 duration-200 text-thOrange"
             />
           ) : (
             <FaPlayCircle
               size={30}
               onClick={handleVideoPlay}
-              className="cursor-pointer hover:scale-110 duration-200 text-thBlue"
+              className="cursor-pointer hover:scale-110 duration-200 text-thOrange"
             />
           )}
         </div>

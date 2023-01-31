@@ -32,7 +32,7 @@ const DevApi = () => {
           <img
             src={ingravityImage}
             alt="code"
-            className="rounded-lg shadow-lg shadow-thBlue"
+            className="rounded-lg shadow-xl shadow-thOrange"
           />
         </div>
       </div>

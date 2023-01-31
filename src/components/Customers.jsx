@@ -43,7 +43,7 @@ const Customers = () => {
               <img
                 src={src}
                 alt="code"
-                className="rounded-lg shadow-lg shadow-thPurple object-cover w-[20rem] h-[14rem] md:w-[32rem] md:h-[24rem] duration-300 hover:scale-125 lg:hover:scale-150"
+                className="rounded-lg shadow-lg shadow-thOrange object-cover w-[20rem] h-[14rem] md:w-[32rem] md:h-[24rem] duration-300 hover:scale-125 lg:hover:scale-150"
               />
             </div>
           ))}

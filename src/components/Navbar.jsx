@@ -36,7 +36,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
             <img
               src={ingravityLogo}
               alt="contact us"
-              className="rounded-full object-cover w-20 h-20 shadow-lg shadow-thPurple"
+              className="rounded-full object-cover w-20 h-20 shadow-lg shadow-thOrange"
             />
           </div>
 
@@ -45,7 +45,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
               {links.map(({ id, link }) => (
                 <li
                   key={id}
-                  className="p-4 uppercase duration-200 hover:text-thBlue cursor-pointer"
+                  className="p-4 uppercase duration-200 hover:text-thOrange cursor-pointer"
                 >
                   {link}
                 </li>

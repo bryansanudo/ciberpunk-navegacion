@@ -10,14 +10,14 @@ const Navegacion = ({ className, className2 }) => {
         <Link to="/">
           <GradientBtn
             className={`capitalize ${className}`}
-            title="Principal"
+            title="Comunidad"
           />
         </Link>
 
         <Link to="/productos">
           <GradientBtn
             className={`ml-6 capitalize ${className2}`}
-            title="Productos"
+            title="Tienda"
           />
         </Link>
       </div>

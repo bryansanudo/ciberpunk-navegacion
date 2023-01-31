@@ -71,7 +71,7 @@ const RollerSkates = () => {
               {portfolios.map(({ id, src, code, category }) => (
                 <div
                   key={id}
-                  className="rounded-lg shadow-md shadow-gray-600 duration-200 hover:scale-105"
+                  className="rounded-lg shadow-lg shadow-thBlue duration-200 hover:scale-105"
                 >
                   <a href={code} target="_blank" rel="noreferrer">
                     <img

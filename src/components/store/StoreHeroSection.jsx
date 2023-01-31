@@ -1,8 +1,7 @@
 import React, { useRef, useState } from "react";
 import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 
-import heroVideo2 from "@/assets/video2.mp4";
-import Navegacion from "@/layouts/Navegacion";
+import heroVideo from "@/assets/video2.mp4";
 
 const StoreHeroSection = ({ isMenuShown }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -24,7 +23,7 @@ const StoreHeroSection = ({ isMenuShown }) => {
       <video
         ref={videoRef}
         autoPlay
-        src={heroVideo2}
+        src={heroVideo}
         loop
         muted
         className="h-full object-cover w-full absolute -z-10"
@@ -34,15 +33,10 @@ const StoreHeroSection = ({ isMenuShown }) => {
           isVideoPlaying ? "" : "bg-black/80"
         } ${isMenuShown ? "opacity-20" : "opacity-100"}`}
       >
-        <h1 className="text-5xl lg:text-7xl">Ingravity</h1>
+        <div className="flex flex-col gap-5 items-center">
+          <h1 className="text-5xl lg:text-7xl text-thBlue">Tienda</h1>
 
-        <h1 className="text-5xl lg:text-7xl capitalize mb-12">
-          <span className="text-thBlue font-bold">Roller</span> is here
-        </h1>
-
-        <div className="flex flex-row justify-center items-center">
-          <Navegacion className="capitalize" className2="capitalize mx-12" />
-
+          <h1 className="text-5xl lg:text-7xl capitalize ">Roller</h1>
           {isVideoPlaying ? (
             <FaPauseCircle
               size={30}
