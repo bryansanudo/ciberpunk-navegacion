@@ -34,9 +34,9 @@ const StoreHeroSection = ({ isMenuShown }) => {
         } ${isMenuShown ? "opacity-20" : "opacity-100"}`}
       >
         <div className="flex flex-col gap-5 items-center">
-          <h1 className="text-5xl lg:text-7xl text-thBlue">Tienda</h1>
+          <h1 className="text-5xl lg:text-7xl text-thBlue uppercase">Tienda</h1>
 
-          <h1 className="text-5xl lg:text-7xl capitalize ">Roller</h1>
+          <h1 className="text-5xl lg:text-7xl  uppercase ">Roller</h1>
           {isVideoPlaying ? (
             <FaPauseCircle
               size={30}

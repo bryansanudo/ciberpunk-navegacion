@@ -8,23 +8,25 @@ const DevApi = () => {
   return (
     <PageSection
       name="developer API"
-      title="Developer API"
-      subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem esse perferendis nam voluptates animi quos qui maiores corporis accusantium enim aliquid, at odit est dicta eligendi provident vitae aliquam molestias.`}
+      title="¿Quiénes somos?"
+      subtitle={`Estamos seguros de que rodando hemos llegado a lugares de nuestra ciudad que normalmente no visitaríamos. Nos juntamos para recorrer las calles de Medellín, si te gusta salir y darle duro en tus patines te esperamos.`}
     >
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
         <div className="flex flex-col gap-4 w-full lg:w-1/2 p-8 bg-gray-900 rounded-lg">
           <p className="border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
-            Whom madam songs faster get as followd sought many leave.
+            La vida es mejor sobre ruedas. El patinaje no solo es un deporte, es
+            una forma de vida. Una forma de ver el mundo, una forma de sentir la
+            libertad, una forma de ser feliz
           </p>
           <p className="border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
-            At that the sat my of, clasp this front velvet.
+            No somos solo una comunidad Roller, somos una gran familia.
           </p>
           <p className="border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
-            Nevermore still of shrieked volume vainly lordly had, unbrokenquit
-            sign
+            3 años haciendo que esta pasión por rodar crezca cada día más!
           </p>
           <p className="border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
-            Ominous bust now stern my lies agreeing tining sat quaf
+            Ya saben no hay excusas para perderte el parche de rodar por
+            Medellín.
           </p>
         </div>
 

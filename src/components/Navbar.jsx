@@ -12,11 +12,11 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
     },
     {
       id: 2,
-      link: "products",
+      link: "developer API",
     },
     {
       id: 3,
-      link: "developer API",
+      link: "products",
     },
     {
       id: 4,

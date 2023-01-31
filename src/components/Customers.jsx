@@ -30,8 +30,8 @@ const Customers = () => {
   return (
     <PageSection
       name="customers"
-      title="Customers"
-      subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem esse perferendis nam voluptates animi quos qui maiores corporis accusantium enim aliquid, at odit est dicta eligendi provident vitae aliquam molestias.`}
+      title="Eventos"
+      subtitle={`¡Gracias a la comunidad Ingravity Roller por tantos momentos llenos de buena energía! Esa es la magia del patín que donde llega irradia con su energía.`}
     >
       <>
         <div className="grid lg:grid-cols-2 text-left gap-8 mb-16">

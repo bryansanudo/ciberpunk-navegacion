@@ -52,10 +52,10 @@ const Products = () => {
   return (
     <PageSection
       name="products"
-      title="Products"
-      subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
+      title="Servicios"
+      subtitle={`Después de un largo día lleno de ocupaciones y estrés no hay mejor parche que montar tus patines y salir a compartir en INGRAVITY ROLLER.`}
     >
-      <div className="grid lg:grid-cols-2 gap-12 text-black">
+      <div className="grid lg:grid-cols-2 gap-12  text-black">
         {products.map(({ id, icon, title }) => (
           <div
             key={id}

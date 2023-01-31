@@ -8,7 +8,7 @@ const ContactForm = () => {
       <form action="" mthod="POST">
         <div className="grid lg:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col col-span-2 lg:col-span-1">
-            <label className="capitalize text-sm py-2 font-light">name</label>
+            <label className="capitalize text-sm py-2 font-light">Nombre</label>
             <input
               type="text"
               name="name"
@@ -16,7 +16,9 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col col-span-2 lg:col-span-1">
-            <label className="capitalize text-sm py-2 font-light">phone</label>
+            <label className="capitalize text-sm py-2 font-light">
+              Telefono
+            </label>
             <input
               type="text"
               name="phone"
@@ -24,7 +26,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="flex flex-col col-span-2 ">
-            <label className="capitalize text-sm py-2 font-light">email</label>
+            <label className="capitalize text-sm py-2 font-light">Correo</label>
             <input
               type="email"
               name="email"
@@ -33,7 +35,7 @@ const ContactForm = () => {
           </div>
           <div className="flex flex-col col-span-2 ">
             <label className="capitalize text-sm py-2 font-light">
-              messagee
+              Mensaje
             </label>
             <textarea
               name="message"
@@ -43,7 +45,10 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <GradientBtn className="ml-4 mt-4 capitalize" title="send message" />
+          <GradientBtn
+            className="ml-4 mt-4 capitalize"
+            title="Enviar Mensaje"
+          />
         </div>
       </form>
     </div>
