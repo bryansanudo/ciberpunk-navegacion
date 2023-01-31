@@ -3,16 +3,28 @@ import { FaRoute, FaSkating } from "react-icons/fa";
 import { GiTeacher } from "react-icons/gi";
 import { MdGroup } from "react-icons/md";
 
-import PageSegction from "@/components/PageSection";
+import PageSection from "@/components/PageSection";
+import ServicesRoutes from "@/components/comunity/ServicesRoutes";
+import ServicesGroup from "@/components/comunity/ServicesGroup";
+import ServicesRent from "@/components/comunity/ServicesRent";
 
 const Products = () => {
+  const mySwitchFunction = (param) => {
+    switch (param) {
+      case 1:
+        return <ServicesRoutes />;
+      case 2:
+        return <ServicesGroup />;
+      case 4:
+        return <ServicesRent />;
+    }
+  };
+
   const products = [
     {
       id: 1,
       icon: <FaRoute size={40} className="text-white" />,
       title: "Rutas",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
     },
     {
       id: 2,
@@ -38,26 +50,27 @@ const Products = () => {
   ];
 
   return (
-    <PageSegction
+    <PageSection
       name="products"
       title="Products"
       subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
     >
       <div className="grid lg:grid-cols-2 gap-12 text-black">
-        {products.map(({ id, icon, title, subtitle }) => (
+        {products.map(({ id, icon, title }) => (
           <div
             key={id}
-            className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-4 lg:p-8 text-center"
+            className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-4 lg:p- text-center"
           >
-            <div className="flex items-center justify-center duration-300 group-hover:scale-110">
-              <div className="bg-black rounded-full p-5  ">{icon}</div>
+            <div className="flex items-center justify-center  ">
+              <div className="bg-black rounded-full p-3  ">{icon}</div>
             </div>
             <h1 className="text-3xl lg:text-5xl my-5 capitalize">{title}</h1>
-            <p className="text-lg">{subtitle}</p>
+
+            {mySwitchFunction(id)}
           </div>
         ))}
       </div>
-    </PageSegction>
+    </PageSection>
   );
 };
 

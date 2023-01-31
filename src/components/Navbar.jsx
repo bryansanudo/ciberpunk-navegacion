@@ -36,7 +36,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
             <img
               src={ingravityLogo}
               alt="contact us"
-              className="rounded-full object-cover w-16 h-16 shadow-lg shadow-thPurple"
+              className="rounded-full object-cover w-20 h-20 shadow-lg shadow-thPurple"
             />
           </div>
 
