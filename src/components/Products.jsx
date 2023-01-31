@@ -1,5 +1,7 @@
 import React from "react";
-import { FaRocket, FaSatellite, FaRobot, FaMicrochip } from "react-icons/fa";
+import { FaRoute, FaSkating } from "react-icons/fa";
+import { GiTeacher } from "react-icons/gi";
+import { MdGroup } from "react-icons/md";
 
 import PageSegction from "@/components/PageSection";
 
@@ -7,29 +9,29 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      icon: <FaRocket size={50} className="text-white" />,
-      title: "rocket manufacturing",
+      icon: <FaRoute size={40} className="text-white" />,
+      title: "Rutas",
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
     },
     {
       id: 2,
-      icon: <FaSatellite size={50} className="text-white" />,
-      title: "rocket manufacturing",
+      icon: <GiTeacher size={40} className="text-white" />,
+      title: "clases grupales",
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
     },
     {
       id: 3,
-      icon: <FaRobot size={50} className="text-white" />,
-      title: "rocket manufacturing",
+      icon: <MdGroup size={40} className="text-white" />,
+      title: "clases personalizadas",
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
     },
     {
       id: 4,
-      icon: <FaMicrochip size={50} className="text-white" />,
-      title: "rocket manufacturing",
+      icon: <FaSkating size={40} className="text-white" />,
+      title: "alquiler de patines",
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
     },
@@ -45,12 +47,12 @@ const Products = () => {
         {products.map(({ id, icon, title, subtitle }) => (
           <div
             key={id}
-            className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-8 text-center"
+            className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-4 lg:p-8 text-center"
           >
             <div className="flex items-center justify-center duration-300 group-hover:scale-110">
-              <div className="bg-black rounded-full p-5 m-4 ">{icon}</div>
+              <div className="bg-black rounded-full p-5  ">{icon}</div>
             </div>
-            <h1 className="text-3xl lg:text-5xl my-8 capitalize">{title}</h1>
+            <h1 className="text-3xl lg:text-5xl my-5 capitalize">{title}</h1>
             <p className="text-lg">{subtitle}</p>
           </div>
         ))}

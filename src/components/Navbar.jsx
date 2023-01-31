@@ -2,6 +2,7 @@ import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import Navegacion from "@/layouts/Navegacion";
+import ingravityLogo from "@/assets/ingravityLogo.png";
 
 const Navbar = ({ isMenuShown, setIsMenuShown }) => {
   const links = [
@@ -32,7 +33,11 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
       <div className="fixed w-full h-24 bg-black text-white z-20">
         <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4 h-full">
           <div>
-            <h1 className="text-thBlue tracking-widest text-3xl">ANTON</h1>
+            <img
+              src={ingravityLogo}
+              alt="contact us"
+              className="rounded-full object-cover w-16 h-16 shadow-lg shadow-thPurple"
+            />
           </div>
 
           <div className="hidden lg:flex items-center ">

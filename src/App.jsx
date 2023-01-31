@@ -32,8 +32,8 @@ function App() {
                   setIsMenuShown={setIsMenuShown}
                 />
                 <HeroSection isMenuShown={isMenuShown} />
-                <Products />
                 <DevApi />
+                <Products />
                 <Customers />
                 <Contact />
               </>

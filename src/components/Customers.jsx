@@ -1,63 +1,29 @@
 import React from "react";
-import {
-  FaAmazon,
-  FaApple,
-  FaFacebook,
-  FaGoogle,
-  FaSnapchatGhost,
-} from "react-icons/fa";
 
 import PageSection from "@/components/PageSection";
+
+import event1 from "@/assets/ingravityEvent/event1.jpg";
+import event2 from "@/assets/ingravityEvent/event2.jpg";
+import event3 from "@/assets/ingravityEvent/event3.jpg";
+import event4 from "@/assets/ingravityEvent/event4.jpg";
 
 const Customers = () => {
   const facts = [
     {
       id: 1,
-      title: "$49M",
-      subtitle: "Was and broken pallas rustling thy.",
+      src: event1,
     },
     {
       id: 2,
-      title: "57%",
-      subtitle: "Was and broken pallas rustling thy.",
+      src: event2,
     },
     {
       id: 3,
-      title: "3 months faster",
-      subtitle: "Was and broken pallas rustling thy.",
+      src: event3,
     },
     {
       id: 4,
-      title: "7 new countries",
-      subtitle: "Was and broken pallas rustling thy.",
-    },
-  ];
-
-  const companies = [
-    {
-      id: 1,
-      icon: <FaGoogle size={25} />,
-      title: "google",
-    },
-    {
-      id: 2,
-      icon: <FaFacebook size={25} />,
-      title: "facebook",
-    },
-    {
-      id: 3,
-      icon: <FaAmazon size={25} />,
-      title: "amazon",
-    },
-    {
-      id: 4,
-      icon: <FaApple size={25} />,
-      title: "apple",
-    },
-    {
-      id: 5,
-      icon: <FaSnapchatGhost size={25} />,
-      title: "snapchat",
+      src: event4,
     },
   ];
 
@@ -68,26 +34,17 @@ const Customers = () => {
       subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem esse perferendis nam voluptates animi quos qui maiores corporis accusantium enim aliquid, at odit est dicta eligendi provident vitae aliquam molestias.`}
     >
       <>
-        <div className="grid lg:grid-cols-4 text-left gap-8 mb-16">
-          {facts.map(({ id, title, subtitle }) => (
+        <div className="grid lg:grid-cols-2 text-left gap-8 mb-16">
+          {facts.map(({ id, src }) => (
             <div
               key={id}
-              className="odd:bg-thBlue even:bg-thOrange text-black p-4 rounded-lg"
+              className=" rounded-lg flex flex-col items-center justify-center p-4 lg:p-8 text-center "
             >
-              <h1 className="text-3xl font-bold mb-2">{title}</h1>
-              <p>{subtitle}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="flex flex-col lg:flex-row items-center justify-around gap-6">
-          {companies.map(({ id, icon, title }) => (
-            <div
-              key={id}
-              className="flex items-center capitalize p-4 rounded-lg"
-            >
-              {icon}
-              <p className="ml-2">{title}</p>
+              <img
+                src={src}
+                alt="code"
+                className="rounded-lg shadow-lg shadow-thPurple object-cover w-[20rem] h-[14rem] md:w-[32rem] md:h-[24rem] duration-300 hover:scale-125 lg:hover:scale-150"
+              />
             </div>
           ))}
         </div>

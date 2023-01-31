@@ -1,6 +1,6 @@
 import React from "react";
 
-import codeImage from "@/assets/code.jpg";
+import ingravityImage from "@/assets/ingravity.jpg";
 
 import PageSection from "@/components/PageSection";
 
@@ -30,7 +30,7 @@ const DevApi = () => {
 
         <div className="w-full lg:w-1/2 lg:rotate-6 duration-300 hover:rotate-0">
           <img
-            src={codeImage}
+            src={ingravityImage}
             alt="code"
             className="rounded-lg shadow-lg shadow-thBlue"
           />

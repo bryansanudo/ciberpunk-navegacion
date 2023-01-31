@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { Outlet, Link } from "react-router-dom";
 
 import Navegacion from "@/layouts/Navegacion";
+import rollerLogo from "@/assets/rollerLogo.png";
 
 const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
   const links = [
@@ -33,7 +34,11 @@ const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
       <div className="fixed w-full h-24 bg-black text-white z-20">
         <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4 h-full">
           <div>
-            <h1 className="text-thBlue tracking-widest text-3xl">ANTON</h1>
+            <img
+              src={rollerLogo}
+              alt="contact us"
+              className="rounded-full object-cover w-16 h-16 shadow-lg shadow-thPurple"
+            />
           </div>
 
           <div className="hidden lg:flex items-center ">

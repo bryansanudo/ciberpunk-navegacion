@@ -1,7 +1,7 @@
 import React from "react";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
-import contactImage from "@/assets/contact-us.jpg";
+import ingravityLogo from "@/assets/ingravityLogo.png";
 
 import PageSection from "@/components/PageSection";
 import ContactForm from "@/components/ContactForm";
@@ -16,7 +16,7 @@ const Contact = () => {
       <div className="flex flex-col lg:flex-row gap-8 mt-4 ">
         <div className="w-full lg:w-1/2 h-full p-4 flex items-center flex-col justify-center">
           <img
-            src={contactImage}
+            src={ingravityLogo}
             alt="contact us"
             className="rounded-full object-cover w-72 h-72 shadow-lg shadow-thPurple"
           />
