@@ -45,10 +45,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <GradientBtn
-            className="ml-4 mt-4 capitalize"
-            title="Enviar Mensaje"
-          />
+          <GradientBtn className=" mt-4 capitalize" title="Enviar Mensaje" />
         </div>
       </form>
     </div>

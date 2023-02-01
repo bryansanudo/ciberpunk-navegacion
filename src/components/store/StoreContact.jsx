@@ -6,12 +6,12 @@ import ingravityLogo from "@/assets/ingravityLogo.png";
 import ContactForm from "@/components/ContactForm";
 const StoreContact = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 mt-4 mx-auto">
+    <div className="flex flex-col lg:flex-row  ">
       <div className="w-full lg:w-1/2 h-full p-4 flex items-center flex-col justify-center">
         <img
           src={ingravityLogo}
           alt="contact us"
-          className="rounded-full object-cover w-72 h-72 shadow-xl shadow-thOrange"
+          className="rounded-full object-cover w-48 h-48 md:w-72 md:h-72 shadow-xl shadow-thOrange"
         />
 
         <p className="py-8 text-center max-w-md">
