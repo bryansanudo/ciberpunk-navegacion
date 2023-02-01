@@ -12,6 +12,7 @@ import StoreMain from "@/components/store/StoreMain";
 
 import Wheels from "@/components/store/products/Wheels";
 import RollerSkates from "@/components/store/products/RollerSkates";
+
 import Waterproof from "@/components/store/products/Waterproof";
 import Promotions from "@/components/store/products/Promotions";
 import Caps from "@/components/store/products/Caps";

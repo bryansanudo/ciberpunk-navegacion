@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import rollerLogo from "@/assets/rollerLogo.png";
 
@@ -32,8 +32,16 @@ const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
     },
   ];
 
+  const useScrollToTop = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  };
+
   return (
     <>
+      {useScrollToTop()}
       <div className="fixed w-full h-24 bg-black text-white z-20">
         <div className="flex justify-between lg:justify-center md:gap-5 items-center max-w-screen-xl mx-auto px-4 h-full">
           <div>
