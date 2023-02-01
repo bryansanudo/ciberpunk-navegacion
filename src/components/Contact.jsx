@@ -2,6 +2,8 @@ import React from "react";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 import ingravityLogo from "@/assets/ingravityLogo.png";
+import contact1 from "@/assets/contact1.jpg";
+import contact2 from "@/assets/contact2.jpg";
 
 import PageSection from "@/components/PageSection";
 import ContactForm from "@/components/ContactForm";
@@ -16,12 +18,12 @@ const Contact = () => {
       ¿Qué esperas? Vamos a hablar.
       `}
     >
-      <div className="flex flex-col lg:flex-row gap-8 mt-4 ">
+      <div className="flex flex-col lg:flex-row items-center md:gap-20 gap-4  ">
         <div className="w-full lg:w-1/2 h-full p-4 flex items-center flex-col justify-center">
           <img
-            src={ingravityLogo}
+            src={contact1}
             alt="contact us"
-            className="rounded-full object-cover w-72 h-72 shadow-xl shadow-thOrange"
+            className="rounded-full object-cover  w-[350px] h-[200px] md:w-[500px] md:h-[250px] shadow-md shadow-thOrange "
           />
 
           <p className="py-8 max-w-md text-center">
@@ -63,7 +65,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 h-full rounded-xl py-6">
+        <div className="w-full lg:w-1/2 h-full rounded-xl ">
           <ContactForm />
         </div>
       </div>

@@ -75,14 +75,14 @@ const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
       </div>
 
       <div
-        className={`w-full bg-black text-white absolute z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
+        className={`fixed w-full bg-black text-white  z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
           isMenuShown ? "top-24 rounded-b-2xl opactiy-95" : "top-[-100%]"
         }`}
       >
         <ul>
           {links.map(({ id, link }) => (
             <li key={id} className="p-4 uppercase cursor-pointer">
-              {link}
+              <Link to={`/productos/${link}`}>{link}</Link>
             </li>
           ))}
         </ul>

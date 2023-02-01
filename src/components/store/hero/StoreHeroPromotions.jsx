@@ -44,27 +44,27 @@ const StoreHeroPromotions = ({ isMenuShown }) => {
           <img
             src={ingravityLogo}
             alt="contact us"
-            className="rounded-full object-cover w-24 h-24 shadow-lg shadow-thOrange hover:scale-110 duration-300"
+            className="rounded-full object-cover w-12 h-12 shadow-lg hover:shadow-thOrange   duration-300"
           />
         </Link>
         {isVideoPlaying ? (
           <FaPauseCircle
             size={50}
             onClick={handleVideoPause}
-            className="cursor-pointer hover:scale-105 duration-300 text-white   "
+            className="cursor-pointer hover:scale-105 duration-300 text-white"
           />
         ) : (
           <FaPlayCircle
             size={50}
             onClick={handleVideoPlay}
-            className="cursor-pointer hover:scale-105 duration-300 text-white "
+            className="cursor-pointer hover:scale-110 duration-300 text-white"
           />
         )}
         <Link to="/productos">
           <img
             src={rollerLogo}
             alt="contact us"
-            className="rounded-full object-cover w-24 h-24 shadow-lg shadow-thBlue hover:scale-110 duration-300 "
+            className="rounded-full object-cover w-12 h-12 shadow-lg hover:shadow-thBlue  duration-300 "
           />
         </Link>
       </div>

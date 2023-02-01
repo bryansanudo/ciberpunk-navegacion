@@ -1,8 +1,10 @@
 import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link as Link1 } from "react-scroll";
+import { Link as Link2 } from "react-router-dom";
 
 import ingravityLogo from "@/assets/ingravityLogo.png";
+import rollerLogo from "@/assets/rollerLogo.png";
 
 const Navbar = ({ isMenuShown, setIsMenuShown }) => {
   const links = [
@@ -32,25 +34,24 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
     <>
       <div className="fixed w-full h-24 bg-black text-white z-20 ">
         <div className="flex justify-between lg:justify-center md:gap-5 items-center max-w-screen-xl mx-auto px-4 h-full">
-          <div>
-            <img
-              src={ingravityLogo}
-              alt="contact us"
-              className="rounded-full object-cover w-16 h-16 shadow-md shadow-thOrange"
-            />
-          </div>
+          <Link2 to="/">
+            <div>
+              <img
+                src={ingravityLogo}
+                alt="contact us"
+                className="rounded-full object-cover w-20 h-20  shadow-thOrange hover:scale-110 duration-300 shadow-lg"
+              />
+            </div>
+          </Link2>
 
           <div className="hidden lg:flex items-center ">
             <ul className="flex">
               {links.map(({ id, link }) => (
-                <li
-                  key={id}
-                  className="p-4 uppercase duration-200 hover:text-thOrange cursor-pointer"
-                >
-                  <Link to={link} smooth duration={500}>
+                <Link1 key={id} to={link} smooth duration={500}>
+                  <li className="p-4 uppercase duration-300 hover:text-thOrange cursor-pointer">
                     {link}
-                  </Link>
-                </li>
+                  </li>
+                </Link1>
               ))}
             </ul>
           </div>
@@ -61,6 +62,15 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
           >
             {isMenuShown ? <FaTimes size={30} /> : <FaBars size={30} />}
           </div>
+          <Link2 to="/productos">
+            <div>
+              <img
+                src={rollerLogo}
+                alt="contact us"
+                className="rounded-full object-cover w-20 h-20 hover:scale-110 duration-300 shadow-lg shadow-thBlue"
+              />
+            </div>
+          </Link2>
         </div>
       </div>
 
@@ -71,16 +81,17 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
       >
         <ul>
           {links.map(({ id, link }) => (
-            <li key={id} className="p-4 uppercase cursor-pointer">
-              <Link
-                onClick={() => setIsMenuShown(!isMenuShown)}
-                to={link}
-                smooth
-                duration={500}
-              >
+            <Link1
+              onClick={() => setIsMenuShown(!isMenuShown)}
+              to={link}
+              smooth
+              duration={500}
+              key={id}
+            >
+              <li className="p-4 uppercase cursor-pointer duration-300 hover:text-thOrange ">
                 {link}
-              </Link>
-            </li>
+              </li>
+            </Link1>
           ))}
         </ul>
       </div>
