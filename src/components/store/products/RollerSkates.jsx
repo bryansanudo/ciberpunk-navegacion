@@ -59,7 +59,7 @@ const RollerSkates = () => {
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
       <StoreHeroSection isMenuShown={isMenuShown} />
-      <div className="flex flex-col gap- items-center  ">
+      <div className="flex flex-col items-center ">
         <PageSegction
           name="products"
           title="Products"

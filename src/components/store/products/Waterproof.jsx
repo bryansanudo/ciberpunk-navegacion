@@ -100,7 +100,7 @@ const Waterproof = () => {
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
       <StoreHeroSection isMenuShown={isMenuShown} />
-      <div className="flex flex-col gap-56 items-center">
+      <div className="flex flex-col gap-[2850px] sm:gap-[200px] md:gap-[850px] items-center">
         <PageSection
           name="products"
           title="Products"
@@ -130,7 +130,9 @@ const Waterproof = () => {
             </div>
           </div>
         </PageSection>
-        <StoreContact />
+        <div className="md:mr-28 ">
+          <StoreContact />
+        </div>
       </div>
     </>
   );

@@ -86,7 +86,7 @@ const Wheels = () => {
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
       <StoreHeroSection isMenuShown={isMenuShown} />
-      <div className="flex flex-col gap-56">
+      <div className="flex flex-col gap-[500px] sm:gap-0 items-center  ">
         <PageSection
           name="products"
           title="Products"
