@@ -9,7 +9,7 @@ import ContactForm from "@/components/ContactForm";
 const Contact = () => {
   return (
     <PageSection
-      name="contact"
+      name="contactanos"
       title="Contacto"
       subtitle={`
       Estas buscando los patines perfectos para comenzar en el mundo del patinaje. 

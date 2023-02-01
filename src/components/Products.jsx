@@ -51,7 +51,7 @@ const Products = () => {
 
   return (
     <PageSection
-      name="products"
+      name="servicios"
       title="Servicios"
       subtitle={`Después de un largo día lleno de ocupaciones y estrés no hay mejor parche que montar tus patines y salir a compartir en INGRAVITY ROLLER.`}
     >

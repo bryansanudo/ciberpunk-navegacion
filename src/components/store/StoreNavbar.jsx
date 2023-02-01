@@ -37,7 +37,7 @@ const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
             <img
               src={rollerLogo}
               alt="contact us"
-              className="rounded-full object-cover w-20 h-20 shadow-lg shadow-thBlue"
+              className="rounded-full object-cover w-20 h-20 shadow-md shadow-thBlue"
             />
           </div>
 

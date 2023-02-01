@@ -29,7 +29,7 @@ const Customers = () => {
 
   return (
     <PageSection
-      name="customers"
+      name="eventos"
       title="Eventos"
       subtitle={`¡Gracias a la comunidad Ingravity Roller por tantos momentos llenos de buena energía! Esa es la magia del patín que donde llega irradia con su energía.`}
     >

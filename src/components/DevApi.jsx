@@ -7,8 +7,8 @@ import PageSection from "@/components/PageSection";
 const DevApi = () => {
   return (
     <PageSection
-      name="developer API"
-      title="¿Quiénes somos?"
+      name="nosotros"
+      title="¿Quiénes Somos?"
       subtitle={`Somos INGRAVITY ROLLER y estamos seguros de que rodando hemos llegado a lugares de nuestra ciudad que normalmente no visitaríamos. Nos juntamos para recorrer las calles de Medellín, si te gusta salir y darle duro en tus patines te esperamos.`}
     >
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
