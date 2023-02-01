@@ -61,8 +61,8 @@ const RollerSkates = () => {
       <StoreHeroSection isMenuShown={isMenuShown} />
       <div className="flex flex-col items-center ">
         <PageSegction
-          name="products"
-          title="Products"
+          name="/productos/patines"
+          title="Patines"
           subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
         >
           <div

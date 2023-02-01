@@ -3,6 +3,10 @@ import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 
 import heroVideo from "@/assets/video2.mp4";
 
+import { Link } from "react-router-dom";
+import ingravityLogo from "@/assets/ingravityLogo.png";
+import rollerLogo from "@/assets/rollerLogo.png";
+
 const StoreHeroSection = ({ isMenuShown }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
 
@@ -19,7 +23,10 @@ const StoreHeroSection = ({ isMenuShown }) => {
   };
 
   return (
-    <div className="flex items-end justify-center w-full h-screen text-center">
+    <div
+      name="inicio"
+      className="flex items-end justify-center w-full h-screen text-center"
+    >
       <video
         ref={videoRef}
         autoPlay
@@ -29,25 +36,37 @@ const StoreHeroSection = ({ isMenuShown }) => {
         className="h-full object-cover w-full absolute -z-10"
       ></video>
       <div
-        className={`p-8 flex flex-col items-center justify-center duration-500 w-full ${
-          isVideoPlaying ? "" : "bg-black/80"
-        } ${isMenuShown ? "opacity-20" : "opacity-100"}`}
+        className={`p-8 flex flex-row items-center justify-center duration-500 w-full gap-10  ${
+          isMenuShown ? "opacity-20" : "opacity-100"
+        }`}
       >
-        <div className="flex flex-col gap-5 items-center mr-[20px] ">
-          {isVideoPlaying ? (
-            <FaPauseCircle
-              size={50}
-              onClick={handleVideoPause}
-              className="cursor-pointer hover:scale-150 duration-300 text-thBlue   "
-            />
-          ) : (
-            <FaPlayCircle
-              size={50}
-              onClick={handleVideoPlay}
-              className="cursor-pointer hover:scale-150 duration-300 text-thBlue "
-            />
-          )}
-        </div>
+        <Link to="/">
+          <img
+            src={ingravityLogo}
+            alt="contact us"
+            className="rounded-full object-cover w-24 h-24 shadow-lg shadow-thOrange hover:scale-110 duration-300"
+          />
+        </Link>
+        {isVideoPlaying ? (
+          <FaPauseCircle
+            size={50}
+            onClick={handleVideoPause}
+            className="cursor-pointer hover:scale-105 duration-300 text-white   "
+          />
+        ) : (
+          <FaPlayCircle
+            size={50}
+            onClick={handleVideoPlay}
+            className="cursor-pointer hover:scale-105 duration-300 text-white "
+          />
+        )}
+        <Link to="/productos">
+          <img
+            src={rollerLogo}
+            alt="contact us"
+            className="rounded-full object-cover w-24 h-24 shadow-lg shadow-thBlue hover:scale-110 duration-300 "
+          />
+        </Link>
       </div>
     </div>
   );

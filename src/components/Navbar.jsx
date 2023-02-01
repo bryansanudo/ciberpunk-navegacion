@@ -2,7 +2,6 @@ import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
-import Navegacion from "@/layouts/Navegacion";
 import ingravityLogo from "@/assets/ingravityLogo.png";
 
 const Navbar = ({ isMenuShown, setIsMenuShown }) => {

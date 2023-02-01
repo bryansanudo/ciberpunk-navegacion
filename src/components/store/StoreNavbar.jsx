@@ -1,30 +1,33 @@
 import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import Navegacion from "@/layouts/Navegacion";
 import rollerLogo from "@/assets/rollerLogo.png";
 
 const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
   const links = [
     {
       id: 1,
-      link: "patines",
+      link: "inicio",
     },
     {
       id: 2,
-      link: "chaquetas",
+      link: "patines",
     },
     {
       id: 3,
-      link: "gorras",
+      link: "chaquetas",
     },
     {
       id: 4,
-      link: "ruedas",
+      link: "gorras",
     },
     {
       id: 5,
+      link: "ruedas",
+    },
+    {
+      id: 6,
       link: "promociones",
     },
   ];
@@ -32,12 +35,12 @@ const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
   return (
     <>
       <div className="fixed w-full h-24 bg-black text-white z-20">
-        <div className="flex justify-between items-center max-w-screen-xl mx-auto px-4 h-full">
+        <div className="flex justify-between lg:justify-center md:gap-5 items-center max-w-screen-xl mx-auto px-4 h-full">
           <div>
             <img
               src={rollerLogo}
               alt="contact us"
-              className="rounded-full object-cover w-20 h-20 shadow-md shadow-thBlue"
+              className="rounded-full object-cover w-16 h-16 shadow-md shadow-thBlue"
             />
           </div>
 
@@ -52,7 +55,6 @@ const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
                 </li>
               ))}
             </ul>
-            <Navegacion />
           </div>
 
           <div
@@ -75,12 +77,8 @@ const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
               {link}
             </li>
           ))}
-          <Navegacion className="mt-10" className2="mt-10" />
         </ul>
       </div>
-      <section>
-        <Outlet></Outlet>
-      </section>
     </>
   );
 };

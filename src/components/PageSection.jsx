@@ -3,7 +3,7 @@ import React from "react";
 const PageSection = ({ name, title, subtitle, children }) => {
   return (
     <div>
-      <h1 className="text-black" name={name}>
+      <h1 className="" name={name}>
         .
       </h1>
       <div className="max-w-screen-xl mx-auto h-fit">
