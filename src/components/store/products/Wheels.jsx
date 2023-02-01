@@ -2,8 +2,9 @@ import React, { useState } from "react";
 
 import PageSection from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
-import StoreHeroSection from "@/components/store/StoreHeroSection";
-import StoreContact from "@/components/store/StoreContact";
+import StoreHeroWheels from "@/components/store/hero/StoreHeroWheels";
+
+import Contact from "@/components/Contact";
 
 import blackMagic1 from "@/assets/whell/blackMagic1.jpg";
 import blackMagic2 from "@/assets/whell/blackMagic2.jpg";
@@ -85,8 +86,7 @@ const Wheels = () => {
   return (
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
-      <StoreHeroSection isMenuShown={isMenuShown} />
-      <div className="flex flex-col gap-[500px] sm:gap-0 items-center  ">
+      <div className="flex flex-col items-center gap-[700px] sm:gap-[0]   ">
         <PageSection
           name="products"
           title="Products"
@@ -120,8 +120,9 @@ const Wheels = () => {
             </div>
           </div>
         </PageSection>
-        <StoreContact />
+        <StoreHeroWheels />
       </div>
+      <Contact />
     </>
   );
 };

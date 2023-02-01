@@ -40,6 +40,7 @@ function App() {
             }
           ></Route>
           <Route path="/productos" element={<StoreMain />} />
+          <Route path="/productos/inicio" element={<StoreMain />} />
           <Route path="/productos/patines" element={<RollerSkates />} />
           <Route path="/productos/ruedas" element={<Wheels />} />
           <Route path="/productos/chaquetas" element={<Waterproof />} />

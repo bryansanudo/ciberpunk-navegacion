@@ -15,8 +15,10 @@ import waterproof12 from "@/assets/waterproof/waterproof12.jpg";
 
 import PageSection from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
-import StoreHeroSection from "@/components/store/StoreHeroSection";
-import StoreContact from "@/components/store/StoreContact";
+
+import StoreHeroWaterproof from "@/components/store/hero/StoreHeroWaterproof";
+
+import Contact from "@/components/Contact";
 
 const Waterproof = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
@@ -99,8 +101,7 @@ const Waterproof = () => {
   return (
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
-      <StoreHeroSection isMenuShown={isMenuShown} />
-      <div className="flex flex-col gap-[2850px] sm:gap-[200px] md:gap-[850px] items-center">
+      <div className="flex flex-col items-center gap-[2950px] sm:gap-[250px] md:gap-[900px]">
         <PageSection
           name="products"
           title="Products"
@@ -130,10 +131,9 @@ const Waterproof = () => {
             </div>
           </div>
         </PageSection>
-        <div className="md:mr-28 ">
-          <StoreContact />
-        </div>
+        <StoreHeroWaterproof isMenuShown={isMenuShown} />
       </div>
+      <Contact />
     </>
   );
 };

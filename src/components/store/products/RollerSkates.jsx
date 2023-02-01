@@ -9,9 +9,9 @@ import urbanos from "@/assets/rollerSkate/urbanos.jpg";
 
 import PageSegction from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
-import StoreHeroSection from "@/components/store/StoreHeroSection";
+import StoreHeroRollerSkates from "@/components/store/hero/StoreHeroRollerSkates";
 
-import StoreContact from "@/components/store/StoreContact";
+import Contact from "@/components/Contact";
 
 const RollerSkates = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
@@ -58,7 +58,6 @@ const RollerSkates = () => {
   return (
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
-      <StoreHeroSection isMenuShown={isMenuShown} />
       <div className="flex flex-col items-center ">
         <PageSegction
           name="/productos/patines"
@@ -83,7 +82,7 @@ const RollerSkates = () => {
                         className="rounded-md duration-200 hover:scale-105 object-cover  "
                       />
                       <div className="flex items-center justify-center">
-                        <p className="m-4   py-3 uppercase">{category}</p>
+                        <p className="m-4 py-3 uppercase">{category}</p>
                       </div>
                     </a>
                   </div>
@@ -92,10 +91,9 @@ const RollerSkates = () => {
             </div>
           </div>
         </PageSegction>
-        <div className="md:mr-28 ">
-          <StoreContact />
-        </div>
+        <StoreHeroRollerSkates isMenuShown={isMenuShown} />
       </div>
+      <Contact />
     </>
   );
 };

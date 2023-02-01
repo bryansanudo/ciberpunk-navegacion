@@ -19,8 +19,9 @@ import cap16 from "@/assets/cap/cap16.jpg";
 
 import PageSection from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
-import StoreHeroSection from "@/components/store/StoreHeroSection";
-import StoreContact from "@/components/store/StoreContact";
+import StoreHeroCaps from "@/components/store/hero/StoreHeroCaps";
+
+import Contact from "@/components/Contact";
 
 const Waterproof = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
@@ -111,9 +112,8 @@ const Waterproof = () => {
   return (
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
-      <StoreHeroSection isMenuShown={isMenuShown} />
 
-      <div className="flex flex-col gap-[2800px] sm:gap-[400px] md:gap-[900px] items-center">
+      <div className="flex flex-col gap-[2950px] sm:gap-[450px] md:gap-[950px] items-center">
         <PageSection
           name="products"
           title="Products"
@@ -144,10 +144,9 @@ const Waterproof = () => {
             </div>
           </div>
         </PageSection>
-        <div className="md:mr-28 ">
-          <StoreContact />
-        </div>
+        <StoreHeroCaps />
       </div>
+      <Contact />
     </>
   );
 };

@@ -15,7 +15,7 @@ const StoreContact = () => {
         />
 
         <p className="py-8 text-center max-w-md">
-          Recibe la mejor asesoría por patinadores expertos. <br />
+          sffdgdfgdfgRecibe la mejor asesoría por patinadores expertos. <br />
           Envíos a todo Colombia y gratis en Medellín
         </p>
 
