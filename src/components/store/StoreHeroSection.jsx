@@ -33,21 +33,18 @@ const StoreHeroSection = ({ isMenuShown }) => {
           isVideoPlaying ? "" : "bg-black/80"
         } ${isMenuShown ? "opacity-20" : "opacity-100"}`}
       >
-        <div className="flex flex-col gap-5 items-center">
-          <h1 className="text-5xl lg:text-7xl text-thBlue uppercase">Tienda</h1>
-
-          <h1 className="text-5xl lg:text-7xl  uppercase ">Roller</h1>
+        <div className="flex flex-col gap-5 items-center mr-[20px]">
           {isVideoPlaying ? (
             <FaPauseCircle
-              size={30}
+              size={50}
               onClick={handleVideoPause}
-              className="cursor-pointer hover:scale-110 duration-200 text-thBlue"
+              className="cursor-pointer hover:scale-150 duration-300 text-thBlue"
             />
           ) : (
             <FaPlayCircle
-              size={30}
+              size={50}
               onClick={handleVideoPlay}
-              className="cursor-pointer hover:scale-110 duration-200 text-thBlue"
+              className="cursor-pointer hover:scale-150 duration-300 text-thBlue"
             />
           )}
         </div>

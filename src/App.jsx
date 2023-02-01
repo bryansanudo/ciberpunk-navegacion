@@ -13,7 +13,7 @@ import StoreMain from "@/components/store/StoreMain";
 import Wheels from "@/components/store/products/Wheels";
 import RollerSkates from "@/components/store/products/RollerSkates";
 import Waterproof from "@/components/store/products/Waterproof";
-import Accesories from "@/components/store/products/Accesories";
+import Promotions from "@/components/store/products/Promotions";
 import Caps from "@/components/store/products/Caps";
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
           <Route path="/productos/ruedas" element={<Wheels />} />
           <Route path="/productos/chaquetas" element={<Waterproof />} />
           <Route path="/productos/gorras" element={<Caps />} />
-          <Route path="/productos/accesorios" element={<Accesories />} />
+          <Route path="/productos/promociones" element={<Promotions />} />
         </Routes>
       </BrowserRouter>
     </div>

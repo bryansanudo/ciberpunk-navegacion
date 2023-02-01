@@ -9,7 +9,7 @@ const DevApi = () => {
     <PageSection
       name="developer API"
       title="¿Quiénes somos?"
-      subtitle={`Estamos seguros de que rodando hemos llegado a lugares de nuestra ciudad que normalmente no visitaríamos. Nos juntamos para recorrer las calles de Medellín, si te gusta salir y darle duro en tus patines te esperamos.`}
+      subtitle={`Somos INGRAVITY ROLLER y estamos seguros de que rodando hemos llegado a lugares de nuestra ciudad que normalmente no visitaríamos. Nos juntamos para recorrer las calles de Medellín, si te gusta salir y darle duro en tus patines te esperamos.`}
     >
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
         <div className="flex flex-col gap-4 w-full lg:w-1/2 p-8 bg-gray-900 rounded-lg">

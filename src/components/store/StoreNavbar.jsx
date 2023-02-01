@@ -13,19 +13,19 @@ const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
     },
     {
       id: 2,
-      link: "ruedas",
-    },
-    {
-      id: 3,
       link: "chaquetas",
     },
     {
-      id: 4,
+      id: 3,
       link: "gorras",
     },
     {
+      id: 4,
+      link: "ruedas",
+    },
+    {
       id: 5,
-      link: "accesorios",
+      link: "promociones",
     },
   ];
 
