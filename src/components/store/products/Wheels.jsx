@@ -1,126 +1,86 @@
 import React, { useState } from "react";
 
-import PageSection from "@/components/PageSection";
+import PageSegction from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
 import StoreHeroWheels from "@/components/store/hero/StoreHeroWheels";
 
-import Contact from "@/components/Contact";
+import downhill1 from "@/assets/downhillVideo/downhill1.mp4";
+import downhill2 from "@/assets/downhillVideo/downhill2.mp4";
+import downhill3 from "@/assets/downhillVideo/downhill3.mp4";
+import downhill4 from "@/assets/downhillVideo/downhill4.mp4";
 
-import blackMagic1 from "@/assets/whell/blackMagic1.jpg";
-import blackMagic2 from "@/assets/whell/blackMagic2.jpg";
-import blackSonic from "@/assets/whell/blackSonic.jpg";
-import grip from "@/assets/whell/grip.jpg";
-import materG13 from "@/assets/whell/materG13.jpg";
-import mpcRoadWar1 from "@/assets/whell/mpcRoadWar1.jpg";
-import mpcRoadWar2 from "@/assets/whell/mpcRoadWar2.jpg";
+import Contact from "@/components/Contact";
 
 const Wheels = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
 
-  const techs = [
+  const portfolios = [
     {
       id: 1,
-      src: blackMagic1,
-      title: "asj",
-      milimeter: "sdfkl",
-      state: "nueva",
-      price: "$80.000",
-      style: "shadow-[#10849d]",
+      src: downhill1,
+      category: "Downhill",
+      code: "https://www.youtube.com/",
     },
     {
       id: 2,
-      src: blackMagic2,
-      title: "asj",
-      milimeter: "sdfkl",
-      state: "nueva",
-      price: "$80.000",
-      style: "shadow-[#167e18]",
+      src: downhill2,
+      category: "Downhill",
+      code: "/profesionales.pdf",
     },
     {
       id: 3,
-      src: blackSonic,
-      title: "asj",
-      milimeter: "sdfkl",
-      state: "nueva",
-      price: "$80.000",
-      style: "shadow-[#f8eb4c]",
+      src: downhill3,
+      category: "Downhill",
+      code: "/profesionales.pdf",
     },
     {
       id: 4,
-      src: grip,
-      title: "asj",
-      milimeter: "sdfkl",
-      state: "nueva",
-      price: "$80.000",
-      style: "shadow-[#972c8c]",
-    },
-    {
-      id: 5,
-      src: materG13,
-      title: "asj",
-      milimeter: "sdfkl",
-      state: "nueva",
-      price: "$80.000",
-      style: "shadow-[#1cc12a]",
-    },
-    {
-      id: 6,
-      src: mpcRoadWar1,
-      title: "asj",
-      milimeter: "sdfkl",
-      state: "nueva",
-      price: "$80.000",
-      style: "shadow-[#fc644b]",
-    },
-    {
-      id: 7,
-      src: mpcRoadWar2,
-      title: "asj",
-      milimeter: "sdfkl",
-      state: "nueva",
-      price: "$80.000",
-      style: "shadow-[#ecdc31]",
+      src: downhill4,
+      category: "Downhill",
+      code: "/profesionales.pdf",
     },
   ];
 
   return (
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
-      <div className="flex flex-col items-center gap-[700px] sm:gap-[0]   ">
-        <PageSection
-          name="products"
-          title="Products"
+      <div className="flex flex-col items-center ">
+        <PageSegction
+          name="/productos/patines"
+          title="Patines"
           subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
         >
           <div
-            name="experience"
-            className="h-screen w-full bg-gradient-to-b from-gray-800 to-black"
+            name="portfolio"
+            className="w-full bg-gradient-to-b from-gray-800 to-black text-white  "
           >
-            <div className=" relative mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 text-white ">
-              <div className="absolute grid w-full grid-cols-1 gap-8 py-8 px-12 text-center sm:grid-cols-3 sm:px-0 top-0 left-0">
-                {techs.map(
-                  ({ id, src, price, style, title, milimeter, state }) => (
-                    <div
-                      key={id}
-                      className={`rounded-lg py-2 shadow-md duration-500 hover:scale-105 ${style}`}
-                    >
-                      <img
+            <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4">
+              <div className="grid gap-20 mt-8 sm:grid-cols-2 sm:px-0 md:grid-cols-2">
+                {portfolios.map(({ id, src, code, category }) => (
+                  <div
+                    key={id}
+                    className="rounded-lg shadow-lg shadow-thBlue duration-300 hover:scale-105"
+                  >
+                    <a href={code} target="_blank" rel="noreferrer">
+                      <video
                         src={src}
-                        alt=""
-                        className="mx-auto w-20 h-20 lg:w-40 lg:h-40 rounded-lg object-cover"
+                        loop
+                        autoPlay
+                        muted
+                        className="rounded-md   object-cover w-full h-[500px]  "
                       />
-                      <p className="mt-4">{title}</p>
-                      <p>{milimeter} </p>
-                      <p>{state}</p>
-                      <p>{price}</p>
-                    </div>
-                  )
-                )}
+
+                      <div className="flex items-center justify-center">
+                        <p className="m-4 py-3 uppercase">{category}</p>
+                      </div>
+                    </a>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-        </PageSection>
-        <StoreHeroWheels />
+        </PageSegction>
+        <StoreHeroWheels isMenuShown={isMenuShown} />
       </div>
       <Contact />
     </>

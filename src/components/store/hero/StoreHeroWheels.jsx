@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 import rollerLogo from "@/assets/rollerLogo.png";
 
-import heroVideo from "@/assets/heroVideo/slide.mp4";
+import heroVideo from "@/assets/heroVideo/downhill.mp4";
 
 import { Link } from "react-router-dom";
 import ingravityLogo from "@/assets/ingravityLogo.png";
