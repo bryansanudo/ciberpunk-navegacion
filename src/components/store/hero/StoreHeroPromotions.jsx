@@ -33,7 +33,7 @@ const StoreHeroPromotions = ({ isMenuShown }) => {
         src={heroVideo}
         loop
         muted
-        className="h-full object-cover w-full absolute -z-10"
+        className="h-full object-cover w-full absolute -z-10 "
       ></video>
       <div
         className={`p-8 flex flex-row items-center justify-center duration-500 w-full gap-10  ${

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import agresivos from "@/assets/rollerSkate/agresivos.jpg";
-import downhill from "@/assets/rollerSkate/downhill.jpg";
+import balineras from "@/assets/rollerSkate/balineras.jpg";
+import ruedas from "@/assets/rollerSkate/ruedas.jpg";
 import profesionales from "@/assets/rollerSkate/profesionales.jpg";
 import recreativos from "@/assets/rollerSkate/recreativos.jpg";
-import tradicionales from "@/assets/rollerSkate/tradicionales.jpg";
-import urbanos from "@/assets/rollerSkate/urbanos.jpg";
+import accesorios from "@/assets/rollerSkate/accesorios.jpg";
+import urbanos from "@/assets/rollerSkate/balineras.jpg";
 
 import PageSegction from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
@@ -19,39 +19,39 @@ const RollerSkates = () => {
   const portfolios = [
     {
       id: 1,
-      src: urbanos,
-      category: "urbanos",
-      code: "/urbanos.pdf",
-    },
-    {
-      id: 2,
-      src: downhill,
-      category: "downhill",
-      code: "/downhill.pdf",
-    },
-    {
-      id: 3,
       src: profesionales,
       category: "profesionales",
       code: "/profesionales.pdf",
     },
     {
-      id: 4,
+      id: 2,
+      src: ruedas,
+      category: "ruedas",
+      code: "/ruedas.pdf",
+    },
+    {
+      id: 3,
       src: recreativos,
       category: "recreativos",
       code: "/recreativos.pdf",
     },
     {
+      id: 4,
+      src: urbanos,
+      category: "urbanos",
+      code: "/urbanos.pdf",
+    },
+    {
       id: 5,
-      src: agresivos,
-      category: "agresivos",
-      code: "/agresivos.pdf",
+      src: accesorios,
+      category: "accesorios",
+      code: "/accesorios.pdf",
     },
     {
       id: 6,
-      src: tradicionales,
-      category: "tradicionales",
-      code: "/tradicionales.pdf",
+      src: balineras,
+      category: "balineras",
+      code: "/balineras.pdf",
     },
   ];
 
