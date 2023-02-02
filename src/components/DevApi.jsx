@@ -1,8 +1,9 @@
 import React from "react";
 
-import ingravityImage from "@/assets/ingravity.jpg";
+import ingravityVideo from "@/assets/nosotros.mp4";
 
 import PageSection from "@/components/PageSection";
+import downhill1 from "@/assets/downhillVideo/downhill1.mp4";
 
 const DevApi = () => {
   return (
@@ -11,7 +12,7 @@ const DevApi = () => {
       title="¿Quiénes Somos?"
       subtitle={`Somos INGRAVITY ROLLER y estamos seguros de que rodando hemos llegado a lugares de nuestra ciudad que normalmente no visitaríamos. Nos juntamos para recorrer las calles de Medellín, si te gusta salir y darle duro en tus patines te esperamos.`}
     >
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-16">
         <div className="flex flex-col gap-4 w-full lg:w-1/2 p-8 bg-gray-900 rounded-lg">
           <p className="border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
             La vida es mejor sobre ruedas. El patinaje no solo es un deporte, es
@@ -30,10 +31,13 @@ const DevApi = () => {
           </p>
         </div>
 
-        <div className="w-full lg:w-1/2 lg:rotate-6 duration-300 hover:rotate-0">
-          <img
-            src={ingravityImage}
-            alt="code"
+        <div className="w-full lg:w-1/2 flex justify-center  ">
+          <video
+            src={ingravityVideo}
+            loop
+            autoPlay
+            muted
+            //className="rounded-md   object-cover w-full h-[500px]  "
             className="rounded-lg shadow-xl shadow-thOrange"
           />
         </div>

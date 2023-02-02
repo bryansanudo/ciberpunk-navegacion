@@ -1,11 +1,7 @@
 import React, { useRef, useState } from "react";
 import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
-import rollerLogo from "@/assets/rollerLogo.png";
 
 import heroVideo from "@/assets/heroVideo/downhill.mp4";
-
-import { Link } from "react-router-dom";
-import ingravityLogo from "@/assets/ingravityLogo.png";
 
 const StoreHeroDownhill = ({ isMenuShown }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -33,40 +29,26 @@ const StoreHeroDownhill = ({ isMenuShown }) => {
         src={heroVideo}
         loop
         muted
-        className="h-full object-cover w-full absolute -z-10"
+        className="h-full object-cover w-full absolute -z-10 "
       ></video>
       <div
         className={`p-8 flex flex-row items-center justify-center duration-500 w-full gap-10  ${
           isMenuShown ? "opacity-20" : "opacity-100"
         }`}
       >
-        <Link to="/">
-          <img
-            src={ingravityLogo}
-            alt="contact us"
-            className="rounded-full object-cover w-12 h-12 shadow-lg hover:shadow-thOrange   duration-300"
-          />
-        </Link>
         {isVideoPlaying ? (
           <FaPauseCircle
-            size={50}
+            size={25}
             onClick={handleVideoPause}
-            className="cursor-pointer hover:scale-105 duration-300 text-white"
+            className="cursor-pointer hover:scale-105 duration-300 text-thBlue"
           />
         ) : (
           <FaPlayCircle
-            size={50}
+            size={25}
             onClick={handleVideoPlay}
-            className="cursor-pointer hover:scale-110 duration-300 text-white"
+            className="cursor-pointer hover:scale-110 duration-300 text-thBlue"
           />
         )}
-        <Link to="/productos">
-          <img
-            src={rollerLogo}
-            alt="contact us"
-            className="rounded-full object-cover w-12 h-12 shadow-lg hover:shadow-thBlue  duration-300 "
-          />
-        </Link>
       </div>
     </div>
   );

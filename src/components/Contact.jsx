@@ -30,7 +30,7 @@ const Contact = () => {
             Recibe la mejor asesoría por patinadores expertos.
           </p>
 
-          <div className="grid grid-cols-1  mx-auto w-3/5 lg:w-2/5 gap-4">
+          <div className="grid grid-cols-1  mx-auto w-1/2 lg:w-2/5 gap-4">
             <a
               href="https://api.whatsapp.com/message/U5B7NPRK54QCK1
               "
@@ -65,7 +65,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2 h-full rounded-xl ">
+        <div className="md:w-1/2 lg:w-1/2 h-full rounded-xl ">
           <ContactForm />
         </div>
       </div>

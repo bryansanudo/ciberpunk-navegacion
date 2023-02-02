@@ -34,7 +34,7 @@ const Customers = () => {
       subtitle={`¡Gracias a la comunidad Ingravity Roller por tantos momentos llenos de buena energía! Esa es la magia del patín que donde llega irradia con su energía.`}
     >
       <>
-        <div className="grid lg:grid-cols-2 text-left gap-8 mb-16">
+        <div className="grid lg:grid-cols-2  gap-8 mb-16">
           {facts.map(({ id, src }) => (
             <div
               key={id}

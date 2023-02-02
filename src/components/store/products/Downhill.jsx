@@ -19,25 +19,25 @@ const Downhill = () => {
       id: 1,
       src: downhill1,
       category: "Downhill",
-      code: "https://www.youtube.com/",
+      code: "https://www.instagram.com/p/CoCknbGAX_X/",
     },
     {
       id: 2,
       src: downhill2,
       category: "Downhill",
-      code: "/profesionales.pdf",
+      code: "https://www.instagram.com/p/CNygbTrDc32/",
     },
     {
       id: 3,
       src: downhill3,
       category: "Downhill",
-      code: "/profesionales.pdf",
+      code: "https://www.instagram.com/p/CkqijHnO_jl/",
     },
     {
       id: 4,
       src: downhill4,
       category: "Downhill",
-      code: "/profesionales.pdf",
+      code: "https://www.instagram.com/p/ClrulUVpljw/",
     },
   ];
 

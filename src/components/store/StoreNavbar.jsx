@@ -17,15 +17,15 @@ const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
     },
     {
       id: 3,
-      link: "chaquetas",
+      link: "downhill",
     },
     {
       id: 4,
-      link: "gorras",
+      link: "chaquetas",
     },
     {
       id: 5,
-      link: "downhill",
+      link: "gorras",
     },
     {
       id: 6,

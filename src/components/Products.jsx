@@ -23,26 +23,24 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      icon: <FaRoute size={40} className="text-white" />,
+      icon: <FaRoute size={40} className="text-black" />,
       title: "Rutas",
     },
     {
       id: 2,
-      icon: <GiTeacher size={40} className="text-white" />,
+      icon: <GiTeacher size={40} className="text-black" />,
       title: "clases grupales",
-      subtitle:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
     },
     {
       id: 3,
-      icon: <MdGroup size={40} className="text-white" />,
+      icon: <MdGroup size={40} className="text-black" />,
       title: "clases personalizadas",
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
     },
     {
       id: 4,
-      icon: <FaSkating size={40} className="text-white" />,
+      icon: <FaSkating size={40} className="text-black" />,
       title: "alquiler de patines",
       subtitle:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio suscipit sint dicta odio, deserunt modi inventore, natus exercitationem adipisci repellendus.",
@@ -55,21 +53,23 @@ const Products = () => {
       title="Servicios"
       subtitle={`Después de un largo día lleno de ocupaciones y estrés no hay mejor parche que montar tus patines y salir a compartir en INGRAVITY ROLLER.`}
     >
-      <div className="grid lg:grid-cols-2 gap-12  text-black">
-        {products.map(({ id, icon, title }) => (
-          <div
-            key={id}
-            className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-4 lg:p- text-center"
-          >
-            <div className="flex items-center justify-center  ">
-              <div className="bg-black rounded-full p-3  ">{icon}</div>
-            </div>
-            <h1 className="text-3xl lg:text-5xl my-5 capitalize">{title}</h1>
+      <>
+        <div className="grid lg:grid-cols-2 gap-12  text-black">
+          {products.map(({ id, icon, title }) => (
+            <div
+              key={id}
+              className="group bg-gradient-to-r from-thOrange to-thBlue rounded-lg flex flex-col items-center justify-center p-4  text-center "
+            >
+              <div className="flex items-center justify-center  ">{icon}</div>
+              <h1 className="text-lg font-black lg:text-xl my-5 uppercase">
+                {title}
+              </h1>
 
-            {mySwitchFunction(id)}
-          </div>
-        ))}
-      </div>
+              {mySwitchFunction(id)}
+            </div>
+          ))}
+        </div>
+      </>
     </PageSection>
   );
 };
