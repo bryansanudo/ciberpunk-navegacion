@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 
-import heroVideo from "@/assets/herovideo/jump.mp4";
+import heroVideo from "@/assets/heroVideo/jump.mp4";
 
 const StoreHeroCaps = ({ isMenuShown }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
