@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
 
-import heroVideo from "@/assets/video2.mp4";
+import heroVideo from "@/assets/heroVideo/store.mp4";
 
 import { Link } from "react-router-dom";
 import ingravityLogo from "@/assets/ingravityLogo.png";

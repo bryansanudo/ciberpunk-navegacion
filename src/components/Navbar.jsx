@@ -62,7 +62,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
           >
             {isMenuShown ? <FaTimes size={30} /> : <FaBars size={30} />}
           </div>
-          <Link2 to="/productos">
+          <Link2 to="/productos" onClick={() => setIsMenuShown(!isMenuShown)}>
             <div>
               <img
                 src={rollerLogo}
