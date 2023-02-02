@@ -10,7 +10,7 @@ import Contact from "@/components/Contact";
 
 import StoreMain from "@/components/store/StoreMain";
 
-import Wheels from "@/components/store/products/Wheels";
+import Donwhill from "@/components/store/products/Downhill";
 import RollerSkates from "@/components/store/products/RollerSkates";
 
 import Waterproof from "@/components/store/products/Waterproof";
@@ -43,7 +43,7 @@ function App() {
           <Route path="/productos" element={<StoreMain />} />
           <Route path="/productos/inicio" element={<StoreMain />} />
           <Route path="/productos/patines" element={<RollerSkates />} />
-          <Route path="/productos/ruedas" element={<Wheels />} />
+          <Route path="/productos/downhill" element={<Donwhill />} />
           <Route path="/productos/chaquetas" element={<Waterproof />} />
           <Route path="/productos/gorras" element={<Caps />} />
           <Route path="/productos/promociones" element={<Promotions />} />

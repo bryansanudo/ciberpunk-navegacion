@@ -25,7 +25,7 @@ const StoreNavbar = ({ isMenuShown, setIsMenuShown }) => {
     },
     {
       id: 5,
-      link: "ruedas",
+      link: "downhill",
     },
     {
       id: 6,

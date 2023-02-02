@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import PageSegction from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
-import StoreHeroWheels from "@/components/store/hero/StoreHeroWheels";
+import StoreHeroDownhill from "@/components/store/hero/StoreHeroDownhill";
 
 import downhill1 from "@/assets/downhillVideo/downhill1.mp4";
 import downhill2 from "@/assets/downhillVideo/downhill2.mp4";
@@ -11,7 +11,7 @@ import downhill4 from "@/assets/downhillVideo/downhill4.mp4";
 
 import Contact from "@/components/Contact";
 
-const Wheels = () => {
+const Downhill = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
 
   const portfolios = [
@@ -46,8 +46,8 @@ const Wheels = () => {
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
       <div className="flex flex-col items-center ">
         <PageSegction
-          name="/productos/patines"
-          title="Patines"
+          name="/productos/downhill"
+          title="Downhill"
           subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
         >
           <div
@@ -80,11 +80,11 @@ const Wheels = () => {
             </div>
           </div>
         </PageSegction>
-        <StoreHeroWheels isMenuShown={isMenuShown} />
+        <StoreHeroDownhill isMenuShown={isMenuShown} />
       </div>
       <Contact />
     </>
   );
 };
 
-export default Wheels;
+export default Downhill;

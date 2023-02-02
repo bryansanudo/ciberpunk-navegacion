@@ -7,7 +7,7 @@ import heroVideo from "@/assets/heroVideo/downhill.mp4";
 import { Link } from "react-router-dom";
 import ingravityLogo from "@/assets/ingravityLogo.png";
 
-const StoreWheels = ({ isMenuShown }) => {
+const StoreHeroDownhill = ({ isMenuShown }) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
 
   const videoRef = useRef();
@@ -72,4 +72,4 @@ const StoreWheels = ({ isMenuShown }) => {
   );
 };
 
-export default StoreWheels;
+export default StoreHeroDownhill;
