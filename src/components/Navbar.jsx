@@ -39,7 +39,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
               <img
                 src={ingravityLogo}
                 alt="contact us"
-                className="rounded-full object-cover w-20 h-20  shadow-thOrange hover:scale-110 duration-300 shadow-lg"
+                className="rounded-full object-cover w-16 h-16  shadow-thOrange hover:scale-110 duration-300 shadow-lg"
               />
             </div>
           </Link2>
@@ -67,7 +67,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
               <img
                 src={rollerLogo}
                 alt="contact us"
-                className="rounded-full object-cover w-20 h-20 hover:scale-110 duration-300 shadow-lg shadow-thBlue"
+                className="rounded-full object-cover w-16 h-16 hover:scale-110 duration-300 shadow-lg shadow-thBlue"
               />
             </div>
           </Link2>

@@ -10,9 +10,9 @@ import event4 from "@/assets/ingravityEvent/event4.jpg";
 const Customers = () => {
   const facts = [
     {
-      id: 1,
-      src: event1,
-      code: "https://www.instagram.com/p/Cl-ywdnA92G/",
+      id: 4,
+      src: event4,
+      code: "https://www.instagram.com/p/CVwKNuSl9zk/",
     },
     {
       id: 2,
@@ -25,9 +25,9 @@ const Customers = () => {
       code: "https://www.instagram.com/p/CgAh4UUOzVT/",
     },
     {
-      id: 4,
-      src: event4,
-      code: "https://www.instagram.com/p/CVwKNuSl9zk/",
+      id: 1,
+      src: event1,
+      code: "https://www.instagram.com/p/Cl-ywdnA92G/",
     },
   ];
 

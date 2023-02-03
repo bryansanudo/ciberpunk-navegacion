@@ -39,7 +39,7 @@ const DevApi = () => {
             muted
             type="video/mp4"
             playsInline
-            className="rounded-lg shadow-xl shadow-thOrange h-[400px] lg:h-[590px]"
+            className="rounded-lg shadow-xl shadow-thOrange h-[400px] lg:h-[500px]"
           />
         </div>
       </div>

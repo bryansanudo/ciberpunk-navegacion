@@ -25,7 +25,7 @@ const Downhill = () => {
       id: 2,
       src: downhill2,
       category: "Downhill",
-      code: "https://www.instagram.com/p/CNygbTrDc32/",
+      code: "https://www.instagram.com/p/Cahz8Rfl1-S/",
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ const Downhill = () => {
       id: 4,
       src: downhill4,
       category: "Downhill",
-      code: "https://www.instagram.com/p/ClrulUVpljw/",
+      code: "https://www.instagram.com/p/CTQW4tcJPWg/",
     },
   ];
 
@@ -47,8 +47,8 @@ const Downhill = () => {
       <div className="flex flex-col items-center ">
         <PageSegction
           name="/productos/downhill"
-          title="Downhill"
-          subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
+          title="Taller Inline Downhill"
+          subtitle={`Para los amantes al Inline Downhill y los que quieran algún día vivir la experiencia de descender en patines no se pueden perder este taller.`}
         >
           <div
             name="portfolio"

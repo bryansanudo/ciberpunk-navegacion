@@ -62,7 +62,7 @@ const RollerSkates = () => {
         <PageSegction
           name="/productos/patines"
           title="Patines"
-          subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
+          subtitle={`Recibe la mejor accesoria por patinadores expertos. Conoce los catálogos de patines.`}
         >
           <div
             name="portfolio"
