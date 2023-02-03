@@ -4,8 +4,8 @@ import { SiGooglemaps } from "react-icons/si";
 
 const ServicesRoutes = () => {
   return (
-    <div>
-      <div className=" flex flex-col gap-2 ">
+    <>
+      <div className=" flex flex-col gap-2 md:gap-5 ">
         <p>
           <span className="font-black mr-2">Lunes:</span>Avanzados
         </p>
@@ -14,7 +14,7 @@ const ServicesRoutes = () => {
           contiene muchos descensos.
         </p>
         <p>
-          <span className="font-black mr-2">Miercoles:</span>Principiantes
+          <span className="font-black mr-2 ">Miercoles:</span>Principiantes
         </p>
         <p>
           Es necesario buen equilibro, poder avanzar solos y casco. La ruta va a
@@ -47,7 +47,7 @@ const ServicesRoutes = () => {
           </a>
         </p>
       </div>
-    </div>
+    </>
   );
 };
 

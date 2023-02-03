@@ -101,7 +101,7 @@ const Waterproof = () => {
   return (
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
-      <div className="flex flex-col items-center gap-[2950px] sm:gap-[250px] md:gap-[900px]">
+      <div className="flex flex-col items-center gap-[3150px] sm:gap-[350px] md:gap-[600px] lg:gap-[1000px]">
         <PageSection
           name="products"
           title="Products"

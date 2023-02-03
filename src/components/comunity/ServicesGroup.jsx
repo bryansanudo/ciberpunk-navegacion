@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const ServicesGroup = () => {
   return (
-    <div>
+    <>
       <div className=" flex flex-col gap-1">
         <p>Tenemos grupo desde el nivel 0 hasta nivel avanzado.</p>
 
@@ -44,7 +44,7 @@ const ServicesGroup = () => {
           </a>
         </p>
       </div>
-    </div>
+    </>
   );
 };
 

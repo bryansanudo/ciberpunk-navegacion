@@ -37,7 +37,6 @@ const DevApi = () => {
             loop
             autoPlay
             muted
-            //className="rounded-md   object-cover w-full h-[500px]  "
             className="rounded-lg shadow-xl shadow-thOrange"
           />
         </div>
