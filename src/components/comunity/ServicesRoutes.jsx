@@ -10,22 +10,25 @@ const ServicesRoutes = () => {
           <span className="font-black mr-2">Lunes:</span>Avanzados
         </p>
         <p>
-          Es necesario manejo perfecto del freno, buen cardio y casco. La ruta
-          contiene muchos descensos.
+          <span className="font-black mr-2">Requisitos:</span>
+          Manejo perfecto del freno, buen cardio y casco. La ruta contiene
+          muchos descensos.
         </p>
         <p>
           <span className="font-black mr-2 ">Miercoles:</span>Principiantes
         </p>
         <p>
-          Es necesario buen equilibro, poder avanzar solos y casco. La ruta va a
-          un ritmo moderado y no contiene descensos.
+          <span className="font-black mr-2">Requisitos:</span>
+          Buen equilibro, poder avanzar solos y casco. La ruta va a un ritmo
+          moderado y no contiene descensos.
         </p>
         <p>
           <span className="font-black mr-2">Viernes:</span>Intermedia
         </p>
         <p>
-          Es necesario poder avanzar solos, buen manejo de freno y casco. Es una
-          ruta mas larga donde se suele parar a comer y compartir.
+          <span className="font-black mr-2">Requisitos:</span>
+          Poder avanzar solos, buen manejo de freno y casco. Es una ruta mas
+          larga donde se suele parar a comer y compartir.
         </p>
       </div>
 

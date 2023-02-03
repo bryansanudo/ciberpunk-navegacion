@@ -104,7 +104,7 @@ const Waterproof = () => {
       <div className="flex flex-col items-center gap-[3150px] sm:gap-[350px] md:gap-[600px] lg:gap-[1000px]">
         <PageSection
           name="products"
-          title="Products"
+          title="Chaquetas"
           subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
         >
           <div

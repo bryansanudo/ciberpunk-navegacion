@@ -15,7 +15,7 @@ const ServicesGroup = () => {
         </p>
 
         <div className="flex flex-col gap-1 items-center">
-          <span className="font-black ">Grupos</span>
+          <span className="font-black py-5 ">Grupos</span>
           <article>Clases de principiantes </article>
           <article>Clase de frenos básicos </article>
           <article>Frenado en T</article>

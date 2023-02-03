@@ -26,12 +26,12 @@ const DevApi = () => {
             3 años haciendo que esta pasión por rodar crezca cada día más!
           </p>
           <p className="border-l-4 pl-4 odd:border-thOrange even:border-thBlue">
-            Ya saben no hay excusas para perderte el parche de rodar por
+            Te invitamos a formar parte de la comunidad y rodar por todo
             Medellín.
           </p>
         </div>
 
-        <div className="w-full lg:w-1/2 flex justify-center  ">
+        <div className="w-full lg:w-1/2 flex justify-center h-[600px]  ">
           <video
             src={ingravityVideo}
             loop

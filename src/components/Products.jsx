@@ -28,14 +28,14 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      icon: <FaRoute size={40} className="text-black" />,
+      icon: <FaRoute size={50} className="text-black" />,
       title: "Rutas",
       element: <ServicesRoutes />,
       src: routes,
     },
     {
       id: 2,
-      icon: <GiTeacher size={40} className="text-black" />,
+      icon: <GiTeacher size={50} className="text-black" />,
       title: "clases grupales",
       element: <ServicesGroup />,
       src: groups,
@@ -79,12 +79,12 @@ const Products = () => {
                   type="video/mp4"
                   playsInline
                   muted
-                  className=" rounded-lg h-[280px] lg:h-[600px]"
+                  className=" rounded-lg h-[280px] lg:h-[600px] "
                 />
               </div>
               <div className="w-full lg:w-1/2 h-full  flex items-center flex-col justify-center gap-5">
                 <div className="flex items-center justify-center">{icon}</div>
-                <div>{title}</div>
+                <div className="font-black text-2xl">{title}</div>
                 <div>
                   <div>{element}</div>
                 </div>
