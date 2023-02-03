@@ -31,7 +31,7 @@ const DevApi = () => {
           </p>
         </div>
 
-        <div className="w-full lg:w-1/2 flex justify-center h-[600px]  ">
+        <div className="w-full lg:w-1/2 flex justify-center  ">
           <video
             src={ingravityVideo}
             loop
@@ -39,7 +39,7 @@ const DevApi = () => {
             muted
             type="video/mp4"
             playsInline
-            className="rounded-lg shadow-xl shadow-thOrange"
+            className="rounded-lg shadow-xl shadow-thOrange  h-[590px]"
           />
         </div>
       </div>
