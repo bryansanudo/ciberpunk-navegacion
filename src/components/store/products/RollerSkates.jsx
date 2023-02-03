@@ -5,7 +5,7 @@ import ruedas from "@/assets/rollerSkate/ruedas.jpg";
 import profesionales from "@/assets/rollerSkate/profesionales.jpg";
 import recreativos from "@/assets/rollerSkate/recreativos.jpg";
 import accesorios from "@/assets/rollerSkate/accesorios.jpg";
-import urbanos from "@/assets/rollerSkate/balineras.jpg";
+import urbanos from "@/assets/rollerSkate/urbanos.jpg";
 
 import PageSegction from "@/components/PageSection";
 import StoreNavbar from "@/components/store/StoreNavbar";
