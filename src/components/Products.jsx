@@ -76,6 +76,8 @@ const Products = () => {
                   src={src}
                   loop
                   autoPlay
+                  type="video/mp4"
+                  playsInline
                   muted
                   className=" rounded-lg h-[280px] lg:h-[600px]"
                 />

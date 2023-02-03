@@ -28,6 +28,8 @@ const StoreHeroSection = ({ isMenuShown }) => {
         autoPlay
         src={heroVideo}
         loop
+        type="video/mp4"
+        playsInline
         muted
         className="h-full object-cover w-full absolute -z-10"
       ></video>

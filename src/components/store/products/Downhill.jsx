@@ -65,6 +65,8 @@ const Downhill = () => {
                       <video
                         src={src}
                         loop
+                        type="video/mp4"
+                        playsInline
                         autoPlay
                         muted
                         className="rounded-md   object-cover w-full h-[500px]  "

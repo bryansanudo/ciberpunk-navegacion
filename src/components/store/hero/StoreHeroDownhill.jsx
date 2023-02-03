@@ -29,6 +29,8 @@ const StoreHeroDownhill = ({ isMenuShown }) => {
         src={heroVideo}
         loop
         muted
+        type="video/mp4"
+        playsInline
         className="h-full object-cover w-full absolute -z-10 "
       ></video>
       <div
