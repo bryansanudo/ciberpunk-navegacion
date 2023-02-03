@@ -37,6 +37,8 @@ const DevApi = () => {
             loop
             autoPlay
             muted
+            type="video/mp4"
+            playsInline
             className="rounded-lg shadow-xl shadow-thOrange"
           />
         </div>
