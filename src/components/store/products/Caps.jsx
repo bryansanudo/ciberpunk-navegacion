@@ -113,11 +113,11 @@ const Waterproof = () => {
     <>
       <StoreNavbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
 
-      <div className="flex flex-col gap-[3200px] sm:gap-[450px] md:gap-[950px] lg:gap-[1200px] items-center">
+      <div className="flex flex-col gap-[3200px] sm:gap-[450px] md:gap-[950px] lg:gap-[100px] items-center">
         <PageSection
           name="products"
           title="Gorras"
-          subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
+          subtitle={`Texto de prueba(Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio)`}
           style="flex flex-col "
         >
           <div

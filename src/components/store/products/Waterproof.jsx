@@ -105,7 +105,7 @@ const Waterproof = () => {
         <PageSection
           name="products"
           title="Chaquetas"
-          subtitle={`Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio`}
+          subtitle={`Texto de prueba(Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab animi facilis nostrum aspernatur sit error quia quae, placeat optio)`}
         >
           <div
             name="experience"
