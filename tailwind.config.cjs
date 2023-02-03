@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         thBlue: "#4FFF33",
-        thOrange: " #C70039",
+        thOrange: "#F9A23F",
         thPurple: "#ED02FF",
       },
     },
