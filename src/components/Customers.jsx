@@ -12,18 +12,22 @@ const Customers = () => {
     {
       id: 1,
       src: event1,
+      code: "https://www.instagram.com/p/Cl-ywdnA92G/",
     },
     {
       id: 2,
       src: event2,
+      code: "https://www.instagram.com/p/CnzsbEBLPrp/",
     },
     {
       id: 3,
       src: event3,
+      code: "https://www.instagram.com/p/CgAh4UUOzVT/",
     },
     {
       id: 4,
       src: event4,
+      code: "https://www.instagram.com/p/CVwKNuSl9zk/",
     },
   ];
 
@@ -35,16 +39,18 @@ const Customers = () => {
     >
       <>
         <div className="grid lg:grid-cols-2  gap-8 mb-16">
-          {facts.map(({ id, src }) => (
+          {facts.map(({ id, src, code }) => (
             <div
               key={id}
               className=" rounded-lg flex flex-col items-center justify-center p-4 lg:p-8 text-center "
             >
-              <img
-                src={src}
-                alt="code"
-                className="rounded-lg shadow-lg shadow-thOrange object-cover w-[20rem] h-[14rem] md:w-[32rem] md:h-[24rem] duration-300 hover:scale-125 lg:hover:scale-150"
-              />
+              <a href={code} target="_blank" rel="noreferrer">
+                <img
+                  src={src}
+                  alt="code"
+                  className="rounded-lg shadow-lg shadow-thOrange object-cover w-[20rem] h-[14rem] md:w-[32rem] md:h-[24rem] duration-300 hover:scale-125 lg:hover:scale-150"
+                />
+              </a>
             </div>
           ))}
         </div>
